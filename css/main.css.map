@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AKAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACzB;;AACD,AAAA,IAAI;AACJ,IAAI,CAAC;EACD,WAAW,EAAE,oBAAoB;CAEpC",
+    "mappings": "AKAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACzB;;AACD,AAAA,IAAI;AACJ,IAAI,CAAC;EACD,WAAW,EAAE,oBAAoB;CAEpC;;ACTD,AAAA,GAAG,CAAA;EJCC,KAAK,EDEO,OAAO;ECDnB,SAAS,ED6CD,GAAG;EC5CX,WAAW,EDsBR,IAAI;CKvBV;;AACD,AAAA,GAAG,CAAC;EJFA,KAAK,EDEO,OAAO;ECDnB,SAAS,EDoBN,IAAI;ECnBP,WAAW,ED4CH,GAAG;CK1Cd;;AGLD,AAAA,OAAO,CAAA;EACH,gBAAgB,ERaL,OAAO;EQZlB,OAAO,EAAE,IAAS,CAAC,CAAC;CAMvB;;AARD,AAIQ,OAJD,CAGH,gBAAgB,CACZ,EAAE,CAAC,EAAE,CAAA;EACD,UAAU,EAAE,IAAI;CACnB",
     "sources": [
         "../sass/main.scss",
         "../sass/Helper/_variables.scss",
@@ -10,7 +10,8 @@
         "../sass/Base/_reset.scss",
         "../sass/Base/_customize.scss",
         "../sass/Base/_normalized.scss",
-        "../sass/Components/_button.scss"
+        "../sass/Components/_button.scss",
+        "../sass/Layouts/_banner.scss"
     ],
     "names": [],
     "file": "main.css"

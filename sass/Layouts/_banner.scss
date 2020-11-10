@@ -1,0 +1,9 @@
+.banner{
+    background-color: $color-blue-2;
+    padding: $pd3 + 40 0;
+    .banner__content{
+        ul li{
+            list-style: none;
+        }
+    }
+}
