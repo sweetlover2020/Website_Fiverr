@@ -61,23 +61,27 @@ body {
   margin-bottom: 35px;
 }
 
-.explore .explore__bg {
-  padding: 0 45px;
+.explore .explore__row {
+  margin: 25px 0;
 }
 
-.explore .explore__content {
+.explore .explore__row .explore__bg {
+  padding: 0 60px;
+}
+
+.explore .explore__row .explore__content {
   text-align: center;
 }
 
-.explore .explore__content a {
+.explore .explore__row .explore__content a {
   position: relative;
 }
 
-.explore .explore__content a img {
+.explore .explore__row .explore__content a img {
   height: 48px;
 }
 
-.explore .explore__content a::after {
+.explore .explore__row .explore__content a::after {
   content: "";
   position: absolute;
   width: 50px;
@@ -85,12 +89,22 @@ body {
   border-bottom: 2px solid #c5c6c9;
   top: 38px;
   right: 50%;
+  transition: all 0.3s;
 }
 
-.explore .explore__content p {
+.explore .explore__row .explore__content p {
   margin-top: 10px;
   color: #29303b;
   font-size: 18px;
   font-weight: 400;
+}
+
+.explore .explore__row .explore__content:hover {
+  cursor: pointer;
+}
+
+.explore .explore__row .explore__content:hover a::after {
+  border-bottom: 2px solid #1dbf73;
+  width: 100px;
 }
 /*# sourceMappingURL=main.css.map */

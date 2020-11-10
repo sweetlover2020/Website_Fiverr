@@ -3,29 +3,41 @@
     h2 {
         margin-bottom: $mg-2 + 10;
     }
-    .explore__bg{
-        padding: 0 45px;
-    }
-    .explore__content {
-        text-align: center;
-        a{
-            position: relative;
-            img {
-                height: 48px;
-            }
-            &::after{
-                content: "";
-                position: absolute;
-                width: 50px;
-                transform: translateX(50%);
-                border-bottom: 2px solid $color-gray-7;
-                top: 38px;
-                right: 50%;
-            }
+    .explore__row {
+        margin: $mg-2 0;
+        .explore__bg {
+            padding: 0 60px;
         }
-        p {
-            margin-top: $mg-1;
-            @include styleText($color-black-0, $fs-2, $fw-bold-0);
+        .explore__content {
+            text-align: center;
+            a {
+                position: relative;
+                img {
+                    height: 48px;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 50px;
+                    transform: translateX(50%);
+                    border-bottom: 2px solid $color-gray-7;
+                    top: 38px;
+                    right: 50%;
+                    transition: all 0.3s;
+                }
+            }
+            p {
+                margin-top: $mg-1;
+                @include styleText($color-black-0, $fs-2, $fw-bold-0);
+            }
+            &:hover {
+                // background-color: blue;
+                cursor: pointer;
+                a::after {
+                    border-bottom: 2px solid $color-blue-1;
+                    width: 100px;
+                }
+            }
         }
     }
 }
