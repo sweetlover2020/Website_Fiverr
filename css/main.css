@@ -27,11 +27,15 @@ body {
 }
 
 .banner .banner__content {
-  padding-right: 11%;
+  padding-right: 9%;
 }
 
 .banner .banner__content ul li {
   list-style: none;
+}
+
+.banner .banner__content ul li h6 {
+  margin-top: 25px;
 }
 
 .banner .banner__content ul li i {
@@ -41,6 +45,51 @@ body {
 
 .banner .banner__content ul li p {
   color: #7a7d85;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.banner .banner__img {
+  margin-top: 25px;
+}
+
+.explore {
+  padding: 70px 0;
+}
+
+.explore h2 {
+  margin-bottom: 35px;
+}
+
+.explore .explore__bg {
+  padding: 0 45px;
+}
+
+.explore .explore__content {
+  text-align: center;
+}
+
+.explore .explore__content a {
+  position: relative;
+}
+
+.explore .explore__content a img {
+  height: 48px;
+}
+
+.explore .explore__content a::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  transform: translateX(50%);
+  border-bottom: 2px solid #c5c6c9;
+  top: 38px;
+  right: 50%;
+}
+
+.explore .explore__content p {
+  margin-top: 10px;
+  color: #29303b;
   font-size: 18px;
   font-weight: 400;
 }

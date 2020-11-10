@@ -2,8 +2,11 @@
     background-color: $color-blue-2;
     padding: $pd3 + 40 0;
     .banner__content{
-        padding-right: 11%;
+        padding-right: 9%;
         ul li{
+            h6{
+                margin-top: $mg-2;
+            }
             list-style: none;
             i{
                 color: $color-gray-3;
@@ -13,5 +16,8 @@
                 @include styleText($color-gray-3, $fs-2, $fw-bold-0)
             }
         }
+    }
+    .banner__img{
+        margin-top: $mg-2;
     }
 }
