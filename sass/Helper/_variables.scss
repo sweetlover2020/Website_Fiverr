@@ -1,0 +1,60 @@
+// color
+$color-white-0: #fff;
+
+$color-black-0: #29303b; // default
+$color-black-1: #62646a; // Màu như chữ phần header
+
+$color-gray-1: #d5d4d2;
+$color-gray-2: #b5b6ba;
+$color-gray-3: #7a7d85; // Như maù chữ phần comment
+$color-gray-4: #F5F5F5; // Như màu phần background project
+$color0gray-5: #FAFAFA; // Như màu background của các LOGO bến dưới header
+$color-gray-6: #777; // Như màu font-size của menu tầng 2 header
+
+$color-blue-1: #1dbf73; // Như màu của nút button khi chưa hover
+$color-blue-2: #F1FDF7; // Màu khá nhạt như background ở phần Banner
+$color-blue-3: #19a463; // Màu khi hover vào button
+
+$color-purple-1: #584AFF;
+
+// font-size
+$fs-0: 14px;
+$fs-1: 16px;
+$fs-2: 18px;
+$fs-3: 20px;
+$fs-4: 24px;
+
+// margin
+$mg-0: 2px;
+$mg-1: 10px;
+$mg-2: 25px;
+
+// padding
+$pd0: 5px;
+$pd1: 16px;
+$pd2: 24px;
+
+// border-radius
+$border-radius-1: 4px;
+
+// line-height
+
+// font-weight
+$fw-normal: 300;
+$fw-bold-0: 400;
+$fw-bold-1: 500;
+$fw-bold-2: 700;
+
+$fw-sw-1: 300;
+$fw-sw-2: 400;
+$fw-sw-3: 500;
+$fw-sw-4: 600;
+
+
+//break points
+$breakpoints:(
+    'extra-large': 1200px,
+    'large' : 992px,
+    'medium' : 768px,
+    'small' : 576px,
+)
