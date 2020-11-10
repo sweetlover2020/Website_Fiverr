@@ -1,11 +1,3 @@
-.extend {
-  line-height: 1;
-}
-
-.reset {
-  line-height: 1;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -15,17 +7,5 @@
 html,
 body {
   font-family: "Roboto", sans-serif;
-}
-
-.customer {
-  line-height: 1;
-}
-
-.normalized {
-  line-height: 1;
-}
-
-.button {
-  line-height: 1;
 }
 /*# sourceMappingURL=main.css.map */
