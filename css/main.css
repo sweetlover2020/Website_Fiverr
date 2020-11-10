@@ -11,8 +11,8 @@ body {
 
 .h2 {
   color: #29303b;
-  font-size: 700;
-  font-weight: 32px;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 .h6 {
@@ -26,7 +26,22 @@ body {
   padding: 70px 0;
 }
 
+.banner .banner__content {
+  padding-right: 11%;
+}
+
 .banner .banner__content ul li {
   list-style: none;
+}
+
+.banner .banner__content ul li i {
+  color: #7a7d85;
+  margin-right: 10px;
+}
+
+.banner .banner__content ul li p {
+  color: #7a7d85;
+  font-size: 18px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */

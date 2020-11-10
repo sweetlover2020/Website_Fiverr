@@ -2,8 +2,16 @@
     background-color: $color-blue-2;
     padding: $pd3 + 40 0;
     .banner__content{
+        padding-right: 11%;
         ul li{
             list-style: none;
+            i{
+                color: $color-gray-3;
+                margin-right: $mg-1;
+            }
+            p{
+                @include styleText($color-gray-3, $fs-2, $fw-bold-0)
+            }
         }
     }
 }
