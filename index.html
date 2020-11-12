@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
 
+    <!-- Model-video-popup -->
+    <link rel="stylesheet" href="./css/modal-video.min.css">
+
     <!-- My css -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -151,10 +154,75 @@
     </section>
 
     <!-- business -->
-    <section class="business"></section>
+    <section class="business">
+        <div class="container">
+            <div class="row business__row">
+                <div class="col-6 business__content">
+                    <h3>
+                        <span class="business__span1">fiverr</span>
+                        <span class="business__span2">business.</span>
+                    </h3>
+                    <h2 class="h2">A business solution designed for <span class="business__spanNew">teams</span></h2>
+                    <p>Upgrade to a curated experience packed with tools and benefits, dedicated to businesses</p>
+                    <ul>
+                        <li>
+                            <p><i class="far fa-check-circle"></i>Connect to freelancers with proven business experience
+                            </p>
+                        </li>
+                        <li>
+                            <p><i class="far fa-check-circle"></i>Get matched with the perfect talent by a customer
+                                success manager
+                            </p>
+                        </li>
+                        <li>
+                            <p><i class="far fa-check-circle"></i>Manage teamwork and boost productivity with one
+                                powerful workspace
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="form-group">
+                        <button class="btn btn-success">Explore Fiverr Business</button>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img src="./img/comment.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- comment -->
-    <section class="comment"></section>
+    <section class="comment">
+        <div class="container">
+            <div class="owl-carousel owl-theme comment__carousel">
+                <div class="item row comment__item">
+                    <div class="col-5">
+                        <div>
+                            <img src="./img/comment-1.jpg" alt="">
+                            <a href="#!"><i class="fas fa-play-circle js-video-button"
+                                    data-video-id='QcPK9lPJP4g'></i></a>
+                        </div>
+                    </div>
+                    <div class="col-7 comment__item__content">
+                        <h3>Tim and Dan Joo, Co-Founders
+                            <span><img src="./img/haerfest.png" alt=""></span>
+                        </h3>
+                        <p>"When you want to create a business bigger than yourself, you need a lot of help. That's what Fiverr does."</p>
+                    </div>
+                    <!-- <button class="js-video-button" data-video-id='QcPK9lPJP4g'>Youtube</button> -->
+                </div>
+                <div class="item">
+                    <h4>2</h4>
+                </div>
+                <div class="item">
+                    <h4>3</h4>
+                </div>
+                <div class="item">
+                    <h4>4</h4>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- project -->
     <section class="project"></section>
@@ -182,10 +250,20 @@
 
     <!-- Owl-carosel -->
     <script src="./js/owl.carousel.min.js"></script>
+    <!-- Popup video comment -->
+    <script src="./js/jquery-modal-video.min.js"></script>
+    <script>
+        $(".js-video-button").modalVideo({
+            youtube: {
+                controls: 0,
+                nocookie: true
+            }
+        });
+    </script>
 
     <!-- Carousel-students -->
-    <!-- <script>
-        $('.student__course').owlCarousel({
+    <script>
+        $('.comment__carousel').owlCarousel({
             loop: false,
             margin: 10,
             nav: true,
@@ -194,18 +272,18 @@
                 0: {
                     items: 1
                 },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 4
-                },
-                1440: {
-                    items: 6
-                },
+                // 600: {
+                //     items: 3
+                // },
+                // 1000: {
+                //     items: 4
+                // },
+                // 1440: {
+                //     items: 6
+                // },
             }
         })
-    </script> -->
+    </script>
 </body>
 
 </html>

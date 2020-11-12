@@ -21,6 +21,11 @@ body {
   font-weight: 700;
 }
 
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .banner {
   background-color: #F1FDF7;
   padding: 70px 0;
@@ -106,5 +111,86 @@ body {
 .explore .explore__row .explore__content:hover a::after {
   border-bottom: 2px solid #1dbf73;
   width: 100px;
+}
+
+.business {
+  background-color: #0D084D;
+  color: #fff;
+  padding: 70px 0;
+  font-size: 18px;
+}
+
+.business .business__content .business__span1 {
+  font-weight: 900;
+}
+
+.business .business__content .business__span2 {
+  font-weight: 400;
+}
+
+.business .business__content .business__span2::after {
+  content: "new";
+  padding: 2px 10px;
+  font-size: 12px;
+  background-color: #584AFF;
+  border-radius: 10px;
+  margin-left: 8px;
+  position: absolute;
+  top: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.business .business__content h2 {
+  color: #fff;
+  padding: 24px 0;
+  padding-right: 22%;
+}
+
+.business .business__content h2 .business__spanNew {
+  font-family: "Sansita Swashed", cursive;
+  font-weight: 300;
+}
+
+.business .business__content > p {
+  padding-bottom: 16px;
+}
+
+.business .business__content li {
+  list-style: none;
+}
+
+.business .business__content li i {
+  padding-right: 5px;
+  color: #7a7d85;
+  font-size: 24px;
+}
+
+.business .business__content button {
+  margin-top: 25px;
+}
+
+.comment {
+  margin: 70px 0;
+}
+
+.comment .comment__item .comment__item__content h3 {
+  color: #7a7d85;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.comment .comment__item .comment__item__content h3 span img {
+  width: 100px;
+}
+
+.comment .comment__item .comment__item__content p {
+  margin-top: 10px;
+  font-family: "Sansita Swashed", cursive;
+  color: #29303b;
+  font-size: 30px;
+  font-weight: 300;
 }
 /*# sourceMappingURL=main.css.map */

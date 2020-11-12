@@ -1,0 +1,22 @@
+.comment {
+    margin: $pd3 + 40 0;
+    .comment__item {
+        .comment__item__content {
+            h3 {
+                @include styleText($color-gray-3, $fs-3, $fw-bold-0);
+                margin: 0;
+                margin-right: $mg-1;
+                span {
+                    img {
+                        width: 100px;
+                    }
+                }
+            }
+            p{
+                margin-top: $mg-1;
+                font-family: "Sansita Swashed", cursive;
+                @include styleText($color-black-0, $fs-5 - 2, $fw-sw-1)
+            }
+        }
+    }
+}

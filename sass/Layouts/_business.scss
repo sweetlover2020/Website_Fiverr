@@ -1,0 +1,49 @@
+.business {
+    background-color: $color-purple-2;
+    color: $color-white-0;
+    padding: $pd3 + 40 0;
+    font-size: $fs-2;
+    .business__content {
+        .business__span1 {
+            font-weight: $fw-bold-3;
+        }
+        .business__span2 {
+            font-weight: $fw-bold-0;
+            &::after {
+                content: "new";
+                padding: 2px 10px;
+                font-size: $fs-0 - 2;
+                background-color: $color-purple-1;
+                border-radius: $pd1 - 6;
+                margin-left: $mg-1 - 2;
+                position: absolute;
+                top: 10px;
+                text-transform: uppercase;
+                font-weight: $fw-bold-1;
+            }
+        }
+        h2 {
+            color: $color-white-0;
+            padding: $pd2 0;
+            padding-right: 22%;
+            .business__spanNew {
+                font-family: "Sansita Swashed", cursive;
+                font-weight: $fw-sw-1;
+            }
+        }
+        & > p {
+            padding-bottom: $pd1;
+        }
+        li {
+            list-style: none;
+            i {
+                padding-right: $pd0;
+                color: $color-gray-3;
+                font-size: $fs-4;
+            }
+        }
+        button {
+            margin-top: $mg-2;
+        }
+    }
+}
