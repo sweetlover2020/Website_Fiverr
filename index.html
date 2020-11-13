@@ -196,29 +196,69 @@
         <div class="container">
             <div class="owl-carousel owl-theme comment__carousel">
                 <div class="item row comment__item">
-                    <div class="col-5">
-                        <div>
-                            <img src="./img/comment-1.jpg" alt="">
-                            <a href="#!"><i class="fas fa-play-circle js-video-button"
-                                    data-video-id='QcPK9lPJP4g'></i></a>
-                        </div>
+                    <!-- Data-video-id: ID video trên youtube -->
+                    <div class="col-5 comment__item__content1 js-video-button" data-video-id='eu2SJfkGe2s'>
+                        <img src="./img/comment-1.jpg" alt="">
+                        <img src="./img/play.png" alt="" class="comment__play">
+
                     </div>
-                    <div class="col-7 comment__item__content">
+                    <div class="col-7 comment__item__content2">
                         <h3>Tim and Dan Joo, Co-Founders
                             <span><img src="./img/haerfest.png" alt=""></span>
                         </h3>
-                        <p>"When you want to create a business bigger than yourself, you need a lot of help. That's what Fiverr does."</p>
+                        <p>"When you want to create a business bigger than yourself, you need a lot of help. That's what
+                            Fiverr does."</p>
                     </div>
                     <!-- <button class="js-video-button" data-video-id='QcPK9lPJP4g'>Youtube</button> -->
                 </div>
-                <div class="item">
-                    <h4>2</h4>
+                <div class="item row comment__item">
+                    <!-- Data-video-id: ID video trên youtube -->
+                    <div class="col-5 comment__item__content1 js-video-button" data-video-id='DNfLKsULms0'>
+                        <img src="./img/comment-3.jpg" alt="">
+                        <img src="./img/play.png" alt="" class="comment__play">
+
+                    </div>
+                    <div class="col-7 comment__item__content2">
+                        <h3>Caitlin Tormey, Chief Commercial Officer
+                            <span><img src="./img/naddam.png" alt=""></span>
+                        </h3>
+                        <p>"We've used Fiverr for Shopify web development, graphic design, and backend web development.
+                            Working with Fiverr makes my job a little easier every day."</p>
+                    </div>
+                    <!-- <button class="js-video-button" data-video-id='QcPK9lPJP4g'>Youtube</button> -->
                 </div>
-                <div class="item">
-                    <h4>3</h4>
+                <div class="item row comment__item">
+                    <!-- Data-video-id: ID video trên youtube -->
+                    <div class="col-5 comment__item__content1 js-video-button" data-video-id='_L7A9nn7EVk'>
+                        <img src="./img/coment-4.jpg" alt="">
+                        <img src="./img/play.png" alt="" class="comment__play">
+
+                    </div>
+                    <div class="col-7 comment__item__content2">
+                        <h3>Brighid Gannon (DNP, PMHNP-BC), Co-Founder
+                            <span><img src="./img/lavender.png" alt=""></span>
+                        </h3>
+                        <p>"We used Fiverr for SEO, our logo, website, copy, animated videos — literally everything. It
+                            was like working with a human right next to you versus being across the world."</p>
+                    </div>
+                    <!-- <button class="js-video-button" data-video-id='QcPK9lPJP4g'>Youtube</button> -->
                 </div>
-                <div class="item">
-                    <h4>4</h4>
+                <div class="item row comment__item">
+                    <!-- Data-video-id: ID video trên youtube -->
+                    <div class="col-5 comment__item__content1 js-video-button" data-video-id='HRwsVtGTYdk'>
+                        <img src="./img/coment-4.jpg" alt="">
+                        <img src="./img/play.png" alt="" class="comment__play">
+
+                    </div>
+                    <div class="col-7 comment__item__content2">
+                        <h3>Kay Kim, Co-Founder
+                            <span><img src="./img/rooted.png" alt=""></span>
+                        </h3>
+                        <p>"It's extremely exciting that Fiverr has freelancers from all over the world — it broadens
+                            the talent pool. One of the best things about Fiverr is that while we're sleeping, someone's
+                            working."</p>
+                    </div>
+                    <!-- <button class="js-video-button" data-video-id='QcPK9lPJP4g'>Youtube</button> -->
                 </div>
             </div>
         </div>
@@ -264,7 +304,7 @@
     <!-- Carousel-students -->
     <script>
         $('.comment__carousel').owlCarousel({
-            loop: false,
+            loop: true,
             margin: 10,
             nav: true,
             dots: false,

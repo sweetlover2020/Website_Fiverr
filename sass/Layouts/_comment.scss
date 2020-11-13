@@ -1,21 +1,75 @@
 .comment {
     margin: $pd3 + 40 0;
+
+    // Chỉnh nút next back owl-carousel
+
+    .owl-prev,
+    .owl-next {
+        position: absolute;
+        top: 32%;
+        left: -3%;
+        width: 45px;
+        height: 45px;
+        border-radius: 50% !important;
+        &:hover {
+            background: $color-white-0;
+        }
+
+        box-shadow: 0 2px 8px 2px rgba(71, 71, 71, 0.5);
+        z-index: 3;
+        span {
+            line-height: 0.7;
+            font-size: 50px;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .owl-next {
+        left: unset;
+        right: -4%;
+    }
+
     .comment__item {
-        .comment__item__content {
+        .comment__item__content1 {
+            position: relative;
+            .comment__play {
+                content: "123123";
+                display: inline-block;
+                background: url(../img/play.png) no-repeat;
+                background-size: 80px;
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                // z-index: ;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .comment__item__content2 {
+            margin-top: $mg-2;
             h3 {
                 @include styleText($color-gray-3, $fs-3, $fw-bold-0);
                 margin: 0;
                 margin-right: $mg-1;
                 span {
+                    border-left: 1px solid $color-gray-3;
                     img {
-                        width: 100px;
+                        height: 40px;
+                        width: 120px;
+                        display: inline;
                     }
                 }
             }
-            p{
+            p {
                 margin-top: $mg-1;
                 font-family: "Sansita Swashed", cursive;
-                @include styleText($color-black-0, $fs-5 - 2, $fw-sw-1)
+                @include styleText($color-black-0, $fs-5 - 2, $fw-sw-1);
             }
         }
     }
