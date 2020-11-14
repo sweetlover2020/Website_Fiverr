@@ -258,4 +258,21 @@ body {
   font-size: 30px;
   font-weight: 300;
 }
+
+.project {
+  background-color: #F5F5F5;
+  padding: 70px 0;
+}
+
+.project .project__header a {
+  float: right;
+  color: #4a73e8;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 15px;
+}
+
+.project .project__header a:hover {
+  text-decoration: none;
+}
 /*# sourceMappingURL=main.css.map */
