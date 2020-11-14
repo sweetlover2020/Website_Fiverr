@@ -187,11 +187,6 @@ body {
   z-index: 3;
 }
 
-.comment .owl-prev:hover,
-.comment .owl-next:hover {
-  background: #fff;
-}
-
 .comment .owl-prev span,
 .comment .owl-next span {
   line-height: 0.7;
@@ -201,6 +196,11 @@ body {
 .comment .owl-prev:focus,
 .comment .owl-next:focus {
   outline: none;
+}
+
+.comment .owl-theme .owl-nav [class*=owl-]:hover {
+  background: #fff;
+  color: #29303b;
 }
 
 .comment .owl-next {
