@@ -116,7 +116,10 @@ header {
   left: 0;
   z-index: 10;
   width: 100%;
-  background: transparent;
+}
+
+.banner {
+  background: none;
 }
 
 .navbar .navbar-brand {
@@ -136,5 +139,13 @@ header {
 
 .navbar form input {
   border: none;
+}
+
+.trusted {
+  background: #FAFAFA;
+}
+
+.trusted .container {
+  width: 60%;
 }
 /*# sourceMappingURL=main.css.map */
