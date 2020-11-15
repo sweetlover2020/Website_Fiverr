@@ -2,7 +2,6 @@
     margin: $pd3 + 40 0;
 
     // Chỉnh nút next back owl-carousel
-
     .owl-prev,
     .owl-next {
         position: absolute;
@@ -11,9 +10,9 @@
         width: 45px;
         height: 45px;
         border-radius: 50% !important;
-        &:hover {
-            background: $color-white-0;
-        }
+        // &:hover {
+        //     background: $color-white-0;
+        // }
 
         box-shadow: 0 2px 8px 2px rgba(71, 71, 71, 0.5);
         z-index: 3;
@@ -25,7 +24,11 @@
             outline: none;
         }
     }
-
+    .owl-theme .owl-nav [class*=owl-]:hover {
+        background: #fff; 
+        color: $color-black-0;
+        // text-decoration: none;
+    }
     .owl-next {
         left: unset;
         right: -4%;
