@@ -111,12 +111,11 @@ body {
 header {
   width: 90%;
   margin: 0 auto;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
   width: 100%;
-  background: transparent;
 }
 
 .navbar .navbar-brand {
