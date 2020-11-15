@@ -1,0 +1,31 @@
+header {
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.banner {
+    background: none;
+}
+
+.navbar {
+    .navbar-brand {
+        font-size: 30px;
+        font-weight: 700;
+        color: white;
+        span {
+            color: #1dbf73;
+        }
+    }
+    form {
+        border: 1px solid transparent;
+        padding: 6px 12px;
+        input {
+            border: none;
+        }
+    }
+}

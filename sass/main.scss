@@ -3,15 +3,13 @@
 @import './Helper/mixin';
 @import './Helper/extend';
 @import './Base/responsive';
-
 // Base
 @import './Base/reset';
 @import './Base/customize';
 @import './Base/normalized';
-
 // Components
 @import './Components/button';
-
 // Layouts
 @import './Layouts/banner';
 @import './Layouts/explore';
+@import './Layouts/header';
