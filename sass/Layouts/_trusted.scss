@@ -1,43 +1,6 @@
-.trusted {
-    background: $color-gray-5;
-    .container {
-        width: 60%;
-    }
-}
-
-.services__carousel {
-    margin-top: $mg-1 + 6;
-    .item {
-        margin-right: $mg-1 + 6;
-        .poject__items {
-            border-radius: 4px;
-            background-color: $color-white-0;
-            box-shadow: 0 0.14px 2.29266px rgba(0, 0, 0, 0.03231), 0 0.37px 4.42626px rgba(0, 0, 0, 0.04769), 0 3px 7px rgba(0, 0, 0, 0.09);
-            .items {
-                height: 160px;
-                img {
-                    height: 100%;
-                    border-radius: 4px 4px 0 0;
-                }
-            }
+    .trusted {
+        background: $color-gray-5;
+        .container {
+            width: 60%;
         }
     }
-    .project__content {
-        padding-top: 15px;
-        padding-left: 30px;
-        padding-bottom: 10px;
-        img {
-            height: 40px;
-            width: 40px;
-            margin-right: 15px;
-        }
-        h6 {
-            font-weight: $fw-bold-3;
-            margin-bottom: 0.3rem;
-        }
-        p {
-            @include styleText($color-gray-3, $fs-0, $fw-bold-1);
-            margin-bottom: 0;
-        }
-    }
-}
