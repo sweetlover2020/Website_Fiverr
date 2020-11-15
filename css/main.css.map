@@ -13,7 +13,9 @@
         "../sass/Components/_button.scss",
         "../sass/Layouts/_banner.scss",
         "../sass/Layouts/_explore.scss",
-        "../sass/Layouts/_header.scss"
+        "../sass/Layouts/_header.scss",
+        "../sass/Layouts/_trusted.scss",
+        "../sass/Layouts/_services.scss"
     ],
     "names": [],
     "file": "main.css"

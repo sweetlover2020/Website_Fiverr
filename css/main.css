@@ -118,6 +118,10 @@ header {
   width: 100%;
 }
 
+.banner {
+  background: none;
+}
+
 .navbar .navbar-brand {
   font-size: 30px;
   font-weight: 700;
@@ -135,5 +139,60 @@ header {
 
 .navbar form input {
   border: none;
+}
+
+.trusted {
+  background: #FAFAFA;
+}
+
+.trusted .container {
+  width: 60%;
+}
+
+.services__carousel {
+  margin-top: 16px;
+}
+
+.services__carousel .item {
+  margin-right: 16px;
+}
+
+.services__carousel .item .poject__items {
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 0.14px 2.29266px rgba(0, 0, 0, 0.03231), 0 0.37px 4.42626px rgba(0, 0, 0, 0.04769), 0 3px 7px rgba(0, 0, 0, 0.09);
+}
+
+.services__carousel .item .poject__items .items {
+  height: 160px;
+}
+
+.services__carousel .item .poject__items .items img {
+  height: 100%;
+  border-radius: 4px 4px 0 0;
+}
+
+.services__carousel .project__content {
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.services__carousel .project__content img {
+  height: 40px;
+  width: 40px;
+  margin-right: 15px;
+}
+
+.services__carousel .project__content h6 {
+  font-weight: 900;
+  margin-bottom: 0.3rem;
+}
+
+.services__carousel .project__content p {
+  color: #7a7d85;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */
