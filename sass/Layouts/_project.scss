@@ -1,0 +1,14 @@
+.project{
+    background-color: $color-gray-4;
+    padding: $pd3 + 40 0;
+    .project__header{
+        a{
+            float: right;
+            @include styleText($color-blue-4, $fs-2, $fw-bold-0);
+            padding-top: $pd1 - 1;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}

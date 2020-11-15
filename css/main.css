@@ -21,6 +21,11 @@ body {
   font-weight: 700;
 }
 
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .banner {
   background-color: #F1FDF7;
   padding: 70px 0;
@@ -194,5 +199,168 @@ header {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 0;
+}
+
+.business {
+  background-color: #0D084D;
+  color: #fff;
+  padding: 70px 0;
+  font-size: 18px;
+}
+
+.business .business__content .business__span1 {
+  font-weight: 900;
+}
+
+.business .business__content .business__span2 {
+  font-weight: 400;
+}
+
+.business .business__content .business__span2::after {
+  content: "new";
+  padding: 2px 10px;
+  font-size: 12px;
+  background-color: #584AFF;
+  border-radius: 10px;
+  margin-left: 8px;
+  position: absolute;
+  top: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.business .business__content h2 {
+  color: #fff;
+  padding: 24px 0;
+  padding-right: 22%;
+}
+
+.business .business__content h2 .business__spanNew {
+  font-family: "Sansita Swashed", cursive;
+  font-weight: 300;
+}
+
+.business .business__content > p {
+  padding-bottom: 16px;
+}
+
+.business .business__content li {
+  list-style: none;
+}
+
+.business .business__content li i {
+  padding-right: 5px;
+  color: #7a7d85;
+  font-size: 24px;
+}
+
+.business .business__content button {
+  margin-top: 25px;
+  padding: 5px;
+}
+
+.comment {
+  margin: 70px 0;
+}
+
+.comment .owl-prev,
+.comment .owl-next {
+  position: absolute;
+  top: 32%;
+  left: -3%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+  box-shadow: 0 2px 8px 2px rgba(71, 71, 71, 0.5);
+  z-index: 3;
+}
+
+.comment .owl-prev:hover,
+.comment .owl-next:hover {
+  background: #fff;
+}
+
+.comment .owl-prev span,
+.comment .owl-next span {
+  line-height: 0.7;
+  font-size: 50px;
+}
+
+.comment .owl-prev:focus,
+.comment .owl-next:focus {
+  outline: none;
+}
+
+.comment .owl-next {
+  left: unset;
+  right: -4%;
+}
+
+.comment .comment__item .comment__item__content1 {
+  position: relative;
+}
+
+.comment .comment__item .comment__item__content1 .comment__play {
+  content: "123123";
+  display: inline-block;
+  background: url(../img/play.png) no-repeat;
+  background-size: 80px;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.comment .comment__item .comment__item__content1:hover {
+  cursor: pointer;
+}
+
+.comment .comment__item .comment__item__content2 {
+  margin-top: 25px;
+}
+
+.comment .comment__item .comment__item__content2 h3 {
+  color: #7a7d85;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.comment .comment__item .comment__item__content2 h3 span {
+  border-left: 1px solid #7a7d85;
+}
+
+.comment .comment__item .comment__item__content2 h3 span img {
+  height: 40px;
+  width: 120px;
+  display: inline;
+}
+
+.comment .comment__item .comment__item__content2 p {
+  margin-top: 10px;
+  font-family: "Sansita Swashed", cursive;
+  color: #29303b;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.project {
+  background-color: #F5F5F5;
+  padding: 70px 0;
+}
+
+.project .project__header a {
+  float: right;
+  color: #4a73e8;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 15px;
+}
+
+.project .project__header a:hover {
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
