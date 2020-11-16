@@ -91,6 +91,10 @@ body {
   margin-top: 25px;
 }
 
+.banner .banner__img img {
+  width: 100%;
+}
+
 .explore {
   padding: 70px 0;
 }
@@ -202,6 +206,10 @@ body {
 .business .business__content button {
   margin-top: 25px;
   padding: 5px;
+}
+
+.business .business__bg img {
+  width: 100%;
 }
 
 .comment {
@@ -369,6 +377,136 @@ body {
 }
 
 .guides .guides__header a:hover {
+  text-decoration: none;
+}
+
+.guides .guides__content .guides__item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.guides .guides__content .guides__item h6 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.guides .guides__content .guides__item p {
+  color: #7a7d85;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.getting {
+  padding: 70px 0;
+  padding-top: 24px;
+}
+
+.getting img {
+  width: 100%;
+}
+
+.getting .getting__content {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  width: 512px;
+  transform: translate(1px, -50%);
+}
+
+.getting .getting__content h1 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.getting .getting__content h1 span {
+  font-family: 'Sansita Swashed', cursive;
+  font-weight: 500;
+}
+
+.getting .getting__content button {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+footer {
+  padding: 30px 0;
+}
+
+footer .footer__top .row {
+  justify-content: space-between;
+}
+
+footer .footer__top .row h5 {
+  color: #404145;
+}
+
+footer .footer__top .row a {
+  color: #7a7d85;
+  font-size: 14px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2;
+  display: block;
+}
+
+footer .footer__top .row a small {
+  display: block;
+  line-height: 0.3;
+  color: #b5b6ba;
+  font-size: 14px;
+}
+
+footer .footer__bot .footer__left {
+  display: inherit;
+}
+
+footer .footer__bot .footer__left h5 {
+  color: #29303b;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+footer .footer__bot .footer__left p {
+  margin-left: 20px;
+  line-height: 3;
+}
+
+footer .footer__bot .footer__left p:hover {
+  cursor: text;
+}
+
+footer .footer__bot .footer__left p,
+footer .footer__bot .footer__left i {
+  color: #7a7d85;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+footer .footer__bot .footer__right {
+  text-align: right;
+}
+
+footer .footer__bot .footer__right ul li {
+  display: inline;
+  margin: 0 8px;
+  font-size: 20px;
+  line-height: 2;
+}
+
+footer .footer__bot .footer__right ul li a {
+  color: #7a7d85;
+}
+
+footer .footer__bot .footer__right .small__li {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+footer .footer__bot .footer__right .small__li a:hover {
   text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
