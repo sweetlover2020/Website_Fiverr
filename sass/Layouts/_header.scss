@@ -1,16 +1,18 @@
-header {
+.container {
     width: 90%;
     margin: 0 auto;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
-    width: 100%;
+    text-align: center;
+    .header_layer2{
+    background: #212529;
+    color: #777;
+    }
 }
 
-// .banner {
-//     background: none;
-// }
+
 
 .navbar {
     .navbar-brand {
