@@ -19,5 +19,8 @@
     }
     .banner__img{
         margin-top: $mg-2;
+        img{
+            width: 100%;
+        }
     }
 }

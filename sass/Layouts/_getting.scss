@@ -1,0 +1,26 @@
+.getting{
+    padding: $pd3 + 40 0;
+    padding-top: $pd2;
+    img{
+        width: 100%;
+    }
+    .getting__content{
+        position: absolute;
+        top: 50%;
+        left: 3%;
+        width: 512px;
+        transform: translate(1px, -50%);
+        h1{
+            @include styleText($color-white-0, $fs-5 + 3, $fw-bold-3);
+            span{
+                font-family: 'Sansita Swashed', cursive;
+                font-weight: $fw-sw-3;
+            }
+        }
+        button{
+            margin-top: $mg-1;
+            font-size: $fs-3;
+            font-weight: $fw-bold-2;
+        }
+    }
+}
