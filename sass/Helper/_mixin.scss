@@ -16,7 +16,6 @@
     color: $color;
 }
 
-
 // $Screen: Chứa tên màn hình
 @mixin responsive($breakpoint) {
     @if (map-has-key($map: $breakpoints, $key: $breakpoint)) {

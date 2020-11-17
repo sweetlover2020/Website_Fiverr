@@ -4,3 +4,11 @@
 .h6 {
     @include styleText($color-black-0, $fs-2, $fw-bold-2);
 }
+.container1{
+    width: 70%;
+    margin: auto;
+}
+hr{
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}

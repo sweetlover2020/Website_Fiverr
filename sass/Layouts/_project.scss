@@ -2,7 +2,11 @@
     background-color: $color-gray-4;
     padding: $pd3 + 40 0;
     // Chỉnh nút next back owl-carousel
-
+    .owl-next {
+        left: unset;
+        right: -2%;
+    }
+    
 
     // header__project
     .project__header {
