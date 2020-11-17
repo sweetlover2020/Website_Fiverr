@@ -79,7 +79,7 @@ $('.service__carousel').owlCarousel({
             items: 4
         },
         1440: {
-            items: 6
+            items: 5
         },
     }
 })

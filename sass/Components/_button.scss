@@ -1,6 +1,54 @@
-.btn{
-    &:focus{
+.btn {
+    &:focus {
         outline: none;
         box-shadow: none;
     }
+}
+
+.fiver-btnGreen-bold {
+    background-color: #1dbf73;
+    border: 1px solid #1dbf73;
+    border-radius: 3px;
+    padding: 5px 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.fiver-btnGreen-bold:hover {
+    background-color: #19a463;
+    border-color: #19a463;
+    color: #fff;
+}
+
+.fiver-btnGreen-light {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #1dbf73;
+    border: 1px solid #1dbf73;
+    border-radius: 3px;
+    padding: 12px 34px;
+}
+
+.fiver-btnGreen-light:hover {
+    background-color: #3fca89;
+    border-color: #3fca89;
+    color: #fff;
+}
+
+.fiver-btnWhite-colorGreen {
+    background-color: #fff;
+    border: 1px solid #1dbf73;
+    border-radius: 3px;
+    padding: 0px 20px;
+    color: #1dbf73;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.fiver-btnWhite-colorGreen:hover {
+    background-color: #19a463;
+    border-color: #19a463;
+    color: #fff;
 }

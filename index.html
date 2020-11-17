@@ -36,69 +36,394 @@
     <!-- Phần của Thịnh -->
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="header_layer1">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">Fiverr <span>.</span></a>
-                    <form class="form-inline my-2 my-lg-0">
-                        <div class="col-2 col-sm-2 d-md-none">
-                            <i class="fa fa-bars"></i>
-                            <i class="fa fa-search"></i>
+        <div class="container-fluid bg-light">
+            <div class="container1">
+                <nav id="fiver__navbar" class="navbar navbar-light">
+                    <form class="form-inline">
+                        <div class="col header__left">
+                            <h5>fiverr<i class="fas fa-dot-circle"></i></h5>
+
                         </div>
-                        <!-- <span><i class="fa fa-search"></i></span>
-                        <input class="form-control mr-sm-2" type="search" placeholder="Find Services" aria-label="Search"> -->
-                        <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Find Services" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                            <button class="btn fiver-btnGreen-bold">Search</button>
+                        </div>
                     </form>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Fiverr business <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Explore</a>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#">English</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#">USD</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#">Become a Seller</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#">Sign in</a>
-                            </li>
-                            <button class="btn my-2 my-sm-0" type="submit">Join</button>
-                        </ul>
-    
+                    <div class="fiver__menu">
+                        <a class="fiver__pro" href="#!">Fiverr Pro</a>
+                        <a href="#!">Explore</a>
+                        <a href="#!"><i class="fa fa-globe"></i>English</a>
+                        <a href="#!">$USD</a>
+                        <a href="#!">Become a Seller</a>
+                        <a href="#!">Sign In</a>
+                        <button class="btn fiver-btnWhite-colorGreen">Join</button>
                     </div>
                 </nav>
             </div>
-            <div class="header_layer2">
-                <a href="#">Graphics & Design</a>
-                <a href="#">Digital Marketing</a>
-                <a href="#">Writing & Translation</a>
-                <a href="#">Video & Animation</a>
-                <a href="#">Music & Audio</a>
-                <a href="#">Programming & Tech</a>
-                <a href="#">Business</a>
-                <a href="#">Lifestyle</a>
-                <a href="#">Industries</a></div>
-                   
-                
-            </div>
-            
-           
-        </div>
 
+        </div>
+        <hr>
+        <div class="container1">
+            <div class="menu_layer2">
+                <ul>
+                    <!-- Menu Item 1 -->
+                    <li class="menu1">
+                        <a href="#!">Graphics & Design</a>
+                        <!-- Drop Item 1 -->
+                        <div class="drop__menu drop__menu1">
+                            <div class="menu__content">
+                                <div class="row">
+                                    <div class="col menu__chil__item">
+                                        <h6>Logo & Brand Identity</h6>
+                                        <a href="#!">Logo Design</a>
+                                        <a href="#!">Brand Style Guides</a>
+                                        <a href="#!">Business Cards & Stationery</a>
+
+                                        <h6>Gaming</h6>
+                                        <a href="#!">Logo Design</a>
+                                        <a href="#!">Brand Style Guides</a>
+                                        <a href="#!">Business Cards & Stationery</a>
+
+                                        <h6>Art & Illustration</h6>
+                                        <a href="#!">Logo Design</a>
+                                        <a href="#!">Brand Style Guides</a>
+                                        <a href="#!">Business Cards & Stationery</a>
+
+                                    </div>
+                                    <div class="col menu__chil__item">
+                                        <h6>Visual Design</h6>
+                                        <a href="#!">Photoshop Editing</a>
+                                        <a href="#!">Presentation Design</a>
+                                        <a href="#!">Infographic Design</a>
+                                        <a href="#!">Resume Design</a>
+                                        <a href="#!">Vector Tracing</a>
+
+                                        <h6>Packaging & Labels</h6>
+                                        <a href="#!">Photoshop Editing</a>
+                                        <a href="#!">Presentation Design</a>
+                                        <a href="#!">Infographic Design</a>
+                                        <a href="#!">Resume Design</a>
+                                        <a href="#!">Vector Tracing</a>
+
+                                    </div>
+                                    <div class="col menu__chil__item">
+                                        <h6>Web & Mobile</h6>
+                                        <a href="#!">Web & Mobile Design</a>
+                                        <a href="#!">Social Media Design</a>
+                                        <a href="#!">AR Filters & Lenses</a>
+                                        <a href="#!">Web Banners</a>
+
+                                        <h6>Packaging & Labels <i class="fas fa-chevron-right"></i></h6>
+                                        <a href="#!">Architecture & Interior Design</a>
+                                        <a href="#!">Building Information Modeling</a>
+                                        <a href="#!">AR Filters & Lenses <span>New</span></a>
+                                        <a href="#!">Trade Booth Design</a>
+
+                                        <h6>Fashion & Merchandise</h6>
+                                        <a href="#!">Fashion Design</a>
+                                        <a href="#!">T-Shirts & Merchandise</a>
+                                        <a href="#!">Pattern Design</a>
+
+                                    </div>
+                                    <div class="col menu__chil__item">
+                                        <h6>Print Design</h6>
+                                        <a href="#!">Flyer Design</a>
+                                        <a href="#!">Brochure Design</a>
+                                        <a href="#!">Signage Design <span>New</span></a>
+                                        <a href="#!">Poster Design</a>
+                                        <a href="#!">Menu Design</a>
+                                        <a href="#!">Postcard Design</a>
+                                        <a href="#!">Invitation Design</a>
+
+                                        <h6>Product & Characters Design</h6>
+                                        <a href="#!">Industrial & Product Design <span>New</span></a>
+                                        <a href="#!">Brochure Design</a>
+
+                                        <h6>Misc.</h6>
+                                        <a href="#!">Other</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Menu Item 2 -->
+                    <li class="menu2">
+                        <a href="#!">Digital Marketing</a>
+                        <!-- Drop Item 2 -->
+                        <div class="drop__menu drop__menu2">
+                            <div class="menu__content">
+                                <div class="row">
+                                    <div class="col menu__chil__item">
+                                        <a href="#!">Social Media Marketing</a>
+                                        <a href="#!">Social Media Advertising</a>
+                                        <a href="#!">SEO</a>
+                                        <a href="#!">Local SEO</a>
+                                        <a href="#!">Marketing Strategy</a>
+                                        <a href="#!">Public Relations</a>
+                                        <a href="#!">Content Marketing</a>
+                                        <a href="#!">Video Marketing</a>
+                                        <a href="#!">Email Marketing</a>
+                                        <a href="#!">Community Management <span>New</span></a>
+                                        <a href="#!">Crowdfunding</a>
+                                    </div>
+                                    <div class="col menu__chil__item">
+                                        <a href="#!">SEM</a>
+                                        <a href="#!">Influencer Marketing</a>
+                                        <a href="#!">E-Commerce Marketing <span>New</span></a>
+                                        <a href="#!">Affiliate Marketing</a>
+                                        <a href="#!">Mobile Marketing & Advertising</a>
+                                        <a href="#!">Podcast Marketing</a>
+                                        <a href="#!">Book & eBook Marketing <span>New</span></a>
+                                        <a href="#!">Music Promotion</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Menu Item 3 -->
+                    <li class="menu3">
+                        <a href="#!">Writing & Translation</a>
+                        <!-- Drop Item 3 -->
+                        <div class="drop__menu drop__menu3">
+                            <div class="menu__content">
+                                <div class="row">
+                                    <div class="col menu__chil__item">
+                                        <a href="#!">Articles & Blog Posts</a>
+                                        <a href="#!">Translation</a>
+                                        <a href="#!">Proofreading & Editing</a>
+                                        <a href="#!">Brand Voice & Tone</a>
+                                        <a href="#!">Resume Writing</a>
+                                        <a href="#!">Cover Letters</a>
+                                        <a href="#!">LinkedIn Profiles</a>
+                                        <a href="#!">Sales Copy</a>
+                                        <a href="#!">Social Media Copy</a>
+                                        <a href="#!">Ad Copy <span>New</span></a>
+                                        <a href="#!">Podcast Writing</a>
+                                        <a href="#!">White Papers</a>
+                                        <a href="#!">White Papers</a>
+                                        <a href="#!">Press Releases</a>
+                                    </div>
+                                    <div class="col menu__chil__item">
+                                        <a href="#!">Book & eBook Writing</a>
+                                        <a href="#!">Book Editing <span>New</span></a>
+                                        <a href="#!">Beta Reading</a>
+                                        <a href="#!">Website Content</a>
+                                        <a href="#!">Product Descriptions</a>
+                                        <a href="#!">UX Writing</a>
+                                        <a href="#!">eLearning Content Development <span>New</span></a>
+                                        <a href="#!">Grant Writing</a>
+                                        <a href="#!">Business Names & Slogans</a>
+                                        <a href="#!">Scriptwriting</a>
+                                        <a href="#!">Email Copy</a>
+                                        <a href="#!">Research & Summaries</a>
+                                        <a href="#!">Speechwriting</a>
+                                        <a href="#!">Other</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Menu Item 4 -->
+                    <li class="menu4">
+                        <a href="#!">Video & Animation</a>
+                        <!-- Drop Item 4 -->
+                        <div class="drop__menu drop__menu4">
+                            <div class="menu__content">
+                                <div class="row">
+                                    <div class="col menu__chil__item">
+                                        <a href="#!">Articles & Blog Posts</a>
+                                        <a href="#!">Translation</a>
+                                        <a href="#!">Proofreading & Editing</a>
+                                        <a href="#!">Brand Voice & Tone</a>
+                                        <a href="#!">Resume Writing</a>
+                                        <a href="#!">Cover Letters</a>
+                                        <a href="#!">LinkedIn Profiles</a>
+                                        <a href="#!">3D Product Animation</a>
+                                        <a href="#!">Social Media Copy</a>
+                                        <a href="#!">Ad Copy <span>New</span></a>
+                                        <a href="#!">Podcast Writing</a>
+                                        <a href="#!">White Papers</a>
+                                        <a href="#!">White Papers</a>
+                                        <a href="#!">eLearning Video Production</a>
+                                    </div>
+                                    <div class="col menu__chil__item">
+                                        <a href="#!">Book & eBook Writing</a>
+                                        <a href="#!">Unboxing Videos <span>New</span></a>
+                                        <a href="#!">Beta Reading</a>
+                                        <a href="#!">Article to Video <span>New</span></a>
+                                        <a href="#!">Subtitles & Captions</a>
+                                        <a href="#!">Visual Effects</a>
+                                        <a href="#!">eLearning Content Development</a>
+                                        <a href="#!">Grant Writing</a>
+                                        <a href="#!">Business Names & Slogans</a>
+                                        <a href="#!">Scriptwriting</a>
+                                        <a href="#!">Research & Summaries</a>
+                                        <a href="#!">Local Photography <span class="beta">beta</span></a>
+                                        <a href="#!">Other</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Menu Item 5 -->
+                    <li class="menu5">
+                        <a href="#!">Music & Audio</a>
+                        <!-- Drop Item 5 -->
+                        <div class="drop__menu drop__menu5">
+                            <div class="menu__content">
+                                <div class="row">
+                                    <div class="col menu__chil__item">
+                                        <a href="#!">Voice Over</a>
+                                        <a href="#!">Producers & Composers</a>
+                                        <a href="#!">Proofreading & Editing</a>
+                                        <a href="#!">Brand Voice & Tone</a>
+                                        <a href="#!">Resume Writing</a>
+                                        <a href="#!">Cover Letters</a>
+                                        <a href="#!">Mixing & Mastering</a>
+                                        <a href="#!">3D Product Animation</a>
+                                        <a href="#!">Social Media Copy</a>
+                                        <a href="#!">Online Music Lessons </a>
+                                        <a href="#!">Podcast Writing</a>
+                                        <a href="#!">Beat Making <span>New</span></a>
+                                        <a href="#!">White Papers</a>
+                                        <a href="#!">eLearning Video Production</a>
+                                    </div>
+                                    <div class="col menu__chil__item">
+                                        <a href="#!">Audio Ads Production</a>
+                                        <a href="#!">Sound Desig <span>New</span></a>
+                                        <a href="#!">Jingles & Intros</a>
+                                        <a href="#!">Article to Video <span>New</span></a>
+                                        <a href="#!">Subtitles & Captions</a>
+                                        <a href="#!">Visual Effects</a>
+                                        <a href="#!">Music Transcription</a>
+                                        <a href="#!">Grant Writing</a>
+                                        <a href="#!">Business Names & Slogans</a>
+                                        <a href="#!">DJ Drops & Tags</a>
+                                        <a href="#!">DJ Mixing <span>new</span></a>
+                                        <a href="#!">Remixing & Mashups <span>new</span></a>
+                                        <a href="#!">Other</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Menu Item 6 -->
+                    <li class="menu6">
+                        <a href="#!">Programming & Tech</a>
+                        <!-- Drop Item 6 -->
+                        <div class="drop__menu drop__menu6">
+                            <div class="menu__content">
+                                <div class="row">
+                                    <div class="col menu__chil__item">
+                                        <a href="#!">WordPress</a>
+                                        <a href="#!">Producers & Composers</a>
+                                        <a href="#!">Proofreading & Editing</a>
+                                        <a href="#!">Game Development</a>
+                                        <a href="#!">Development for Streamers <span>New</span></a>
+                                        <a href="#!">Cover Letters</a>
+                                        <a href="#!">Mixing & Mastering</a>
+                                        <a href="#!">3D Product Animation</a>
+                                        <a href="#!">Social Media Copy</a>
+                                        <a href="#!">Online Music Lessons </a>
+                                    </div>
+                                    <div class="col menu__chil__item">
+                                        <a href="#!" class="a__blue">Get Your Website in a Few Steps <i
+                                                class="fas fa-stroopwafel"></i></a>
+                                        <a href="#!">Online Coding Lessons <span>New</span></a>
+                                        <a href="#!">Jingles & Intros</a>
+                                        <a href="#!">Article to Video <span>New</span></a>
+                                        <a href="#!">Subtitles & Captions</a>
+                                        <a href="#!">Visual Effects</a>
+                                        <a href="#!">Music Transcription</a>
+                                        <a href="#!">Grant Writing</a>
+                                        <a href="#!">Other</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Menu Item 7 -->
+                    <li class="menu7">
+                        <a href="#!">Business</a>
+                        <!-- Drop Item 7 -->
+                        <div class="drop__menu drop__menu7">
+                            <div class="menu__content">
+                                <div class="row">
+                                    <div class="col menu__chil__item">
+                                        <a href="#!">Virtual Assistant</a>
+                                        <a href="#!">Producers & Composers</a>
+                                        <a href="#!">Proofreading & Editing</a>
+                                        <a href="#!">Game Development</a>
+                                        <a href="#!">Market Research <span>New</span></a>
+                                        <a href="#!">Cover Letters</a>
+                                        <a href="#!">Mixing & Mastering</a>
+                                        <a href="#!">Virtual Assistant</a>
+                                    </div>
+                                    <div class="col menu__chil__item">
+                                        <a href="#!">Branding Services</a>
+                                        <a href="#!">Legal Consulting</a>
+                                        <a href="#!">Financial Consulting <span>New</span></a>
+                                        <a href="#!">Presentations</a>
+                                        <a href="#!">Visual Effects</a>
+                                        <a href="#!">Flyer Distribution</a>
+                                        <a href="#!">Grant Writing</a>
+                                        <a href="#!">Other</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Menu Item 8 -->
+                    <li class="menu8">
+                        <a href="#!">Lifestyle</a>
+                        <!-- Drop Item 8 -->
+                        <div class="drop__menu drop__menu8">
+                            <div class="menu__content">
+                                <div class="row">
+                                    <div class="col menu__chil__item">
+                                        <a href="#!">Gaming</a>
+                                        <a href="#!">Online Lessons</a>
+                                        <a href="#!">Proofreading & Editing</a>
+                                        <a href="#!">Game Development</a>
+                                        <a href="#!">Life Coaching <span>New</span></a>
+                                        <a href="#!">Cover Letters</a>
+                                        <a href="#!">Mixing & Mastering</a>
+                                        <a href="#!">Arts & Crafts</a>
+                                    </div>
+                                    <div class="col menu__chil__item">
+                                        <a href="#!">Health, Nutrition & Fitness</a>
+                                        <a href="#!">Legal Consulting</a>
+                                        <a href="#!">Viral Videos <span>New</span></a>
+                                        <a href="#!">Presentations</a>
+                                        <a href="#!">Visual Effects</a>
+                                        <a href="#!">Collectibles</a>
+                                        <a href="#!">Grant Writing</a>
+                                        <a href="#!">Other</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Menu Item 9 -->
+                    <li class="menu9">
+                        <a href="#!">Industries</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr style="margin: 0;">
     </header>
 
     <!-- carousel -->
@@ -221,330 +546,7 @@
 
 
     <!-- Phần của Minh -->
-    <!-- banner -->
-    <section class="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-6 banner__content">
-                    <h2 class="h2"> A whole world of freelance talent at your fingertips</h2>
-                    <ul>
-                        <li>
-                            <h6 class="h6"><i class="far fa-check-circle"></i>The best for every budget</h6>
-                            <p>Find high-quality services at every price point. No hourly rates, just project-based
-                                pricing.
-                            </p>
-                        </li>
-                        <li>
-                            <h6 class="h6"><i class="far fa-check-circle"></i>Quality work done quickly</h6>
-                            <p>Find the right freelancer to begin working on your project within minutes.</p>
-                        </li>
-                        <li>
-                            <h6 class="h6"><i class="far fa-check-circle"></i>Protected payments, every time</h6>
-                            <p>Always know what you'll pay upfront. Your payment isn't released until you approve the
-                                work.
-                            </p>
-                        </li>
-                        <li>
-                            <h6 class="h6"><i class="far fa-check-circle"></i>24/7 support</h6>
-                            <p>Questions? Our round-the-clock support team is available to help anytime, anywhere.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-6 banner__img">
-                    <img src="./img/banner-1.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- explore -->
-    <section class="explore">
-        <div class="container">
-            <h2 class="h2">Explore the marketplace</h2>
-            <div class="row explore__row">
-                <div class="col-lg-3 explore__bg">
-                    <div class="explore__content">
-                        <a href="#!">
-                            <img src="./img/ex-design.svg" alt="">
-                        </a>
-                        <p>Graphics & Design</p>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="explore__content">
-                        <a href="#!">
-                            <img src="./img/ex-marketing.svg" alt="">
-                        </a>
-                        <p>Digital Marketing</p>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="explore__content">
-                        <a href="#!">
-                            <img src="./img/ex-writing.svg" alt="">
-                        </a>
-                        <p>Writing & Translation</p>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="explore__content">
-                        <a href="#!">
-                            <img src="./img/ex-video.svg" alt="">
-                        </a>
-                        <p>Video & Animation</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row explore__row">
-                <div class="col-lg-3 explore__bg">
-                    <div class="explore__content">
-                        <a href="#!">
-                            <img src="./img/ex-music.svg" alt="">
-                        </a>
-                        <p>Music & Audio</p>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="explore__content">
-                        <a href="#!">
-                            <img src="./img/ex-programing.svg" alt="">
-                        </a>
-                        <p>Programming & Tech</p>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="explore__content">
-                        <a href="#!">
-                            <img src="./img/ex-business.svg" alt="">
-                        </a>
-                        <p>Business</p>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="explore__content">
-                        <a href="#!">
-                            <img src="./img/ex-lifeStyle.svg" alt="">
-                        </a>
-                        <p>Lifestyle</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- business -->
-    <section class="business">
-        <div class="container">
-            <div class="row business__row">
-                <div class="col-6 business__content">
-                    <h3>
-                        <span class="business__span1">fiverr</span>
-                        <span class="business__span2">business.</span>
-                    </h3>
-                    <h2 class="h2">A business solution designed for <span class="business__spanNew">teams</span></h2>
-                    <p>Upgrade to a curated experience packed with tools and benefits, dedicated to businesses</p>
-                    <ul>
-                        <li>
-                            <p><i class="far fa-check-circle"></i>Connect to freelancers with proven business experience
-                            </p>
-                        </li>
-                        <li>
-                            <p><i class="far fa-check-circle"></i>Get matched with the perfect talent by a customer
-                                success manager
-                            </p>
-                        </li>
-                        <li>
-                            <p><i class="far fa-check-circle"></i>Manage teamwork and boost productivity with one
-                                powerful workspace
-                            </p>
-                        </li>
-                    </ul>
-                    <div class="form-group">
-                        <button class="btn btn-success">Explore Fiverr Business</button>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <img src="./img/comment.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- comment -->
-    <section class="comment">
-        <div class="container">
-            <div class="owl-carousel owl-theme comment__carousel">
-                <div class="item row comment__item">
-                    <!-- Data-video-id: ID video trên youtube -->
-                    <div class="col-5 comment__item__content1 js-video-button" data-video-id='eu2SJfkGe2s'>
-                        <img src="./img/comment-1.jpg" alt="">
-                        <img src="./img/play.png" alt="" class="comment__play">
-
-                    </div>
-                    <div class="col-7 comment__item__content2">
-                        <h3>Tim and Dan Joo, Co-Founders
-                            <span><img src="./img/haerfest.png" alt=""></span>
-                        </h3>
-                        <p>"When you want to create a business bigger than yourself, you need a lot of help. That's what
-                            Fiverr does."</p>
-                    </div>
-                    <!-- <button class="js-video-button" data-video-id='QcPK9lPJP4g'>Youtube</button> -->
-                </div>
-                <div class="item row comment__item">
-                    <!-- Data-video-id: ID video trên youtube -->
-                    <div class="col-5 comment__item__content1 js-video-button" data-video-id='DNfLKsULms0'>
-                        <img src="./img/comment-3.jpg" alt="">
-                        <img src="./img/play.png" alt="" class="comment__play">
-
-                    </div>
-                    <div class="col-7 comment__item__content2">
-                        <h3>Caitlin Tormey, Chief Commercial Officer
-                            <span><img src="./img/naddam.png" alt=""></span>
-                        </h3>
-                        <p>"We've used Fiverr for Shopify web development, graphic design, and backend web development.
-                            Working with Fiverr makes my job a little easier every day."</p>
-                    </div>
-                    <!-- <button class="js-video-button" data-video-id='QcPK9lPJP4g'>Youtube</button> -->
-                </div>
-                <div class="item row comment__item">
-                    <!-- Data-video-id: ID video trên youtube -->
-                    <div class="col-5 comment__item__content1 js-video-button" data-video-id='_L7A9nn7EVk'>
-                        <img src="./img/coment-4.jpg" alt="">
-                        <img src="./img/play.png" alt="" class="comment__play">
-
-                    </div>
-                    <div class="col-7 comment__item__content2">
-                        <h3>Brighid Gannon (DNP, PMHNP-BC), Co-Founder
-                            <span><img src="./img/lavender.png" alt=""></span>
-                        </h3>
-                        <p>"We used Fiverr for SEO, our logo, website, copy, animated videos — literally everything. It
-                            was like working with a human right next to you versus being across the world."</p>
-                    </div>
-                    <!-- <button class="js-video-button" data-video-id='QcPK9lPJP4g'>Youtube</button> -->
-                </div>
-                <div class="item row comment__item">
-                    <!-- Data-video-id: ID video trên youtube -->
-                    <div class="col-5 comment__item__content1 js-video-button" data-video-id='HRwsVtGTYdk'>
-                        <img src="./img/coment-4.jpg" alt="">
-                        <img src="./img/play.png" alt="" class="comment__play">
-
-                    </div>
-                    <div class="col-7 comment__item__content2">
-                        <h3>Kay Kim, Co-Founder
-                            <span><img src="./img/rooted.png" alt=""></span>
-                        </h3>
-                        <p>"It's extremely exciting that Fiverr has freelancers from all over the world — it broadens
-                            the talent pool. One of the best things about Fiverr is that while we're sleeping, someone's
-                            working."
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- project -->
-    <section class="project">
-        <div class="container">
-            <div class="project__header">
-                <h2 class="h2">Get inspired with projects made by our freelancers <a href="#!">See More Project <i
-                            class="fa fa-angle-right"></i></a>
-                </h2>
-            </div>
-
-            <div class="owl-carousel owl-theme project__carousel">
-                <div class="item">
-                    <div class="poject__items">
-                        <div class="items">
-                            <img src="./img/project-1.jpg" alt="">
-                        </div>
-                        <div class="row project__content">
-                            <img src="./img/project-1.1.jpg" alt="" style="border-radius: 50%;">
-                            <div>
-                                <h6>Web & Mobile Design</h6>
-                                <p>by paudmartins</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="poject__items">
-                        <div class="items">
-                            <img src="./img/project-2.jpg" alt="">
-                        </div>
-                        <div class="row project__content">
-                            <img src="./img/project-2.2.png" alt="" style="border-radius: 50%;">
-                            <div>
-                                <h6>Brand Style Guides</h6>
-                                <p>by digitalgeria</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="poject__items">
-                        <div class="items">
-                            <img src="./img/project-3.jpg" alt="">
-                        </div>
-                        <div class="row project__content">
-                            <img src="./img/project-3.1.jpeg" alt="" style="border-radius: 50%;">
-                            <div>
-                                <h6>Logo Design</h6>
-                                <p>by evelinaro</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="poject__items">
-                        <div class="items">
-                            <img src="./img/project-4.png" alt="">
-                        </div>
-                        <div class="row project__content">
-                            <img src="./img/project4.1.jpg" alt="" style="border-radius: 50%;">
-                            <div>
-                                <h6>Packaging Design</h6>
-                                <p>by mijalzagier</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="poject__items">
-                        <div class="items">
-                            <img src="./img/project-5.jpg" alt="">
-                        </div>
-                        <div class="row project__content">
-                            <img src="./img/project-5.1.jpg" alt="" style="border-radius: 50%;">
-                            <div>
-                                <h6>Book & Album Covers</h6>
-                                <p>by vnuggz</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- guides -->
-    <section class="guides">
-        <div class="container">
-            <div class="guides__header">
-                <h2 class="h2">Fiverr guides <a href="#!">See More Project <i class="fa fa-angle-right"></i></a>
-                </h2>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- getting -->
-    <section class="getting"></section>
-
-    <!-- footer -->
-    <footer></footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -562,15 +564,6 @@
     <script src="./js/owl.carousel.min.js"></script>
     <!-- Popup video comment -->
     <script src="./js/jquery-modal-video.min.js"></script>
-    <script>
-        $(".js-video-button").modalVideo({
-            youtube: {
-                controls: 0,
-                nocookie: true
-            }
-        });
-    </script>
-
     <!-- index javascrip -->
     <script src="./js/index.js"></script>
 </body>

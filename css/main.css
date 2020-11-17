@@ -21,6 +21,16 @@ body {
   font-weight: 700;
 }
 
+.container1 {
+  width: 80%;
+  margin: auto;
+}
+
+hr {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
 .owl-prev,
 .owl-next {
   position: absolute;
@@ -57,6 +67,54 @@ body {
 .btn:focus {
   outline: none;
   box-shadow: none;
+}
+
+.fiver-btnGreen-bold {
+  background-color: #1dbf73;
+  border: 1px solid #1dbf73;
+  border-radius: 3px;
+  padding: 5px 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.fiver-btnGreen-bold:hover {
+  background-color: #19a463;
+  border-color: #19a463;
+  color: #fff;
+}
+
+.fiver-btnGreen-light {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #1dbf73;
+  border: 1px solid #1dbf73;
+  border-radius: 3px;
+  padding: 12px 34px;
+}
+
+.fiver-btnGreen-light:hover {
+  background-color: #3fca89;
+  border-color: #3fca89;
+  color: #fff;
+}
+
+.fiver-btnWhite-colorGreen {
+  background-color: #fff;
+  border: 1px solid #1dbf73;
+  border-radius: 3px;
+  padding: 0px 20px;
+  color: #1dbf73;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.fiver-btnWhite-colorGreen:hover {
+  background-color: #19a463;
+  border-color: #19a463;
+  color: #fff;
 }
 
 .banner {
@@ -147,32 +205,258 @@ body {
 }
 
 header {
-  width: 90%;
-  margin: 0 auto;
-  position: fixed;
-  top: 0;
-  left: 0;
   z-index: 10;
-  width: 100%;
 }
 
-.navbar .navbar-brand {
-  font-size: 30px;
+header #fiver__navbar {
+  display: flex;
+  padding-bottom: 0;
+}
+
+header #fiver__navbar .form-inline .header__left {
+  display: inherit;
+}
+
+header #fiver__navbar .form-inline .header__left h5 {
+  color: #29303b;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+header #fiver__navbar .form-inline .header__left p {
+  margin-left: 20px;
+  line-height: 3;
+}
+
+header #fiver__navbar .form-inline .header__left p:hover {
+  cursor: text;
+}
+
+header #fiver__navbar .form-inline .header__left p,
+header #fiver__navbar .form-inline .header__left i {
+  color: #1fd0b6;
+  font-size: 14px;
+}
+
+header #fiver__navbar .form-inline .input-group input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+header #fiver__navbar .fiver__menu {
+  display: flex;
+  justify-content: space-around;
+  gap: 28px;
+}
+
+header #fiver__navbar .fiver__menu a {
+  text-decoration: none;
+  padding: 5px 0;
+  color: #d5d4d2;
+  font-size: 16px;
   font-weight: 700;
-  color: white;
+  color: #62646a;
+  transition: all 0.5s;
 }
 
-.navbar .navbar-brand span {
-  color: #1dbf73;
+header #fiver__navbar .fiver__menu a i {
+  margin-right: 2px;
 }
 
-.navbar form {
-  border: 1px solid transparent;
-  padding: 6px 12px;
+header #fiver__navbar .fiver__menu a:hover {
+  color: #62646a;
+  font-size: 16px;
+  font-weight: 700;
 }
 
-.navbar form input {
-  border: none;
+header #fiver__navbar .fiver__menu .fiver__pro {
+  color: #1fd0b6;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+
+header #fiver__navbar .fiver__menu .fiver__pro:hover {
+  color: #505763;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  header #fiver__navbar .fiver__menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header #fiver__navbar .fiver__menu a {
+    display: none;
+  }
+}
+
+header .menu_layer2 {
+  text-align: center;
+  position: relative;
+}
+
+header .menu_layer2 ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5px 0;
+  margin-bottom: 3px;
+  height: 27px;
+}
+
+header .menu_layer2 ul li {
+  display: inline-block;
+}
+
+header .menu_layer2 ul li a {
+  color: #7a7d85;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+header .menu_layer2 ul li a:hover {
+  text-decoration: none;
+}
+
+header .menu_layer2 ul li:hover {
+  border-bottom: 3px solid #1dbf73;
+}
+
+header .menu_layer2 .drop__menu {
+  position: absolute;
+  visibility: hidden;
+  top: 27px;
+  z-index: 2;
+  left: 32px;
+  box-shadow: #62646a;
+}
+
+header .menu_layer2 .drop__menu .menu__chil__item {
+  text-align: left;
+}
+
+header .menu_layer2 .drop__menu .menu__chil__item a {
+  margin: 3px 0;
+  display: block;
+}
+
+header .menu_layer2 .drop__menu .menu__chil__item a span {
+  border: 1px solid #ff62ad;
+  font-size: 12px;
+  color: #ff62ad;
+  border-radius: 14px;
+  padding: 2px 8px;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+header .menu_layer2 .drop__menu .menu__chil__item a .beta {
+  border: 1px solid #4a73e8;
+  color: #4a73e8;
+}
+
+header .menu_layer2 .drop__menu .menu__chil__item .a__blue {
+  color: #4a73e8;
+}
+
+header .menu_layer2 .drop__menu .menu__content {
+  padding: 15px 0 15px 20px;
+  width: 1200px;
+  background-color: white;
+  border: 1px solid #c5c6c9;
+  box-shadow: 0px 1px 2px 1px #c5c6c9;
+}
+
+header .menu_layer2 .drop__menu .menu__content .menu__chil__item h6 {
+  margin-top: 7px;
+  font-size: 18px;
+}
+
+header .menu_layer2 .menu1:hover .drop__menu1 {
+  visibility: visible;
+}
+
+header .menu_layer2 .menu2:hover .drop__menu2 {
+  visibility: visible;
+}
+
+header .menu_layer2 .drop__menu2 {
+  left: 222px;
+}
+
+header .menu_layer2 .drop__menu2 .menu__content {
+  width: 600px;
+}
+
+header .menu_layer2 .menu3:hover .drop__menu3 {
+  visibility: visible;
+}
+
+header .menu_layer2 .drop__menu3 {
+  left: 405px;
+}
+
+header .menu_layer2 .drop__menu3 .menu__content {
+  width: 680px;
+}
+
+header .menu_layer2 .menu4:hover .drop__menu4 {
+  visibility: visible;
+}
+
+header .menu_layer2 .drop__menu4 {
+  left: 612px;
+}
+
+header .menu_layer2 .drop__menu4 .menu__content {
+  width: 665px;
+}
+
+header .menu_layer2 .menu5:hover .drop__menu5 {
+  visibility: visible;
+}
+
+header .menu_layer2 .drop__menu5 {
+  left: 404px;
+}
+
+header .menu_layer2 .drop__menu5 .menu__content {
+  width: 535px;
+}
+
+header .menu_layer2 .menu6:hover .drop__menu6 {
+  visibility: visible;
+}
+
+header .menu_layer2 .drop__menu6 {
+  left: 460px;
+}
+
+header .menu_layer2 .drop__menu6 .menu__content {
+  width: 680px;
+}
+
+header .menu_layer2 .menu7:hover .drop__menu7 {
+  visibility: visible;
+}
+
+header .menu_layer2 .drop__menu7 {
+  left: 695px;
+}
+
+header .menu_layer2 .drop__menu7 .menu__content {
+  width: 567px;
+}
+
+header .menu_layer2 .drop__menu8 {
+  left: 828px;
+}
+
+header .menu_layer2 .drop__menu8 .menu__content {
+  width: 540px;
 }
 
 .trusted {

@@ -1,33 +1,229 @@
-.container {
-    width: 90%;
-    margin: 0 auto;
-    position: fixed;
-    top: 0;
-    left: 0;
+header {
     z-index: 10;
-    text-align: center;
-    .header_layer2{
-    background: #212529;
-    color: #777;
-    }
-}
-
-
-
-.navbar {
-    .navbar-brand {
-        font-size: 30px;
-        font-weight: 700;
-        color: white;
-        span {
-            color: #1dbf73;
+    #fiver__navbar {
+        display: flex;
+        padding-bottom: 0;
+        .form-inline {
+            .header__left {
+                display: inherit;
+                h5 {
+                    @include styleText($color-black-0, $fs-5 + 3, $fw-bold-3);
+                }
+                p {
+                    margin-left: $mg-1 + 10;
+                    line-height: 3;
+                    &:hover {
+                        cursor: text;
+                    }
+                }
+                p,
+                i {
+                    color: #1fd0b6;
+                    font-size: $fs-0;
+                }
+            }
+            .input-group {
+                input {
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+        .fiver__menu {
+            display: flex;
+            justify-content: space-around;
+            gap: 28px;
+            a {
+                text-decoration: none;
+                padding: 5px 0;
+                @include styleText($color-gray-1, $fs-1, $fw-bold-2);
+                color: #62646a;
+                transition: all 0.5s;
+                i {
+                    margin-right: $mg-0;
+                }
+                &:hover {
+                    color: #62646a;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+            .fiver__pro {
+                color: #1fd0b6;
+                font-size: 16px;
+                font-weight: 700;
+                transition: all 0.5s;
+                &:hover {
+                    color: #505763;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+            @include responsive("medium") {
+                display: none;
+            }
+            @include responsive("large") {
+                a {
+                    display: none;
+                }
+            }
         }
     }
-    form {
-        border: 1px solid transparent;
-        padding: 6px 12px;
-        input {
-            border: none;
+
+    // menu layout2
+    .menu_layer2 {
+        text-align: center;
+        position: relative;
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 5px 0;
+            margin-bottom: 3px;
+            height: 27px;
+        }
+        ul li {
+            display: inline-block;
+            a {
+                @include styleText($color-gray-3, $fs-2, $fw-bold-0);
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+            &:hover{
+                border-bottom: 3px solid $color-blue-1;
+            }
+        }
+        .drop__menu {
+            position: absolute;
+            visibility: hidden; //Ẩn hiện menu layer2
+            top: 27px;
+            z-index: 2;
+            left: 32px;
+            box-shadow: #62646a;
+            .menu__chil__item {
+                text-align: left;
+                a {
+                    margin: 3px 0;
+                    display: block;
+                    span{
+                        border: 1px solid $color-pink-1;
+                        font-size: $fs-0 - 2;
+                        color: $color-pink-1;
+                        border-radius: 14px;
+                        padding: 2px 8px;
+                        margin-left: $mg-1;
+                        text-transform: uppercase;
+                    }
+                    .beta{
+                        border: 1px solid $color-blue-4;
+                        color: $color-blue-4;
+                    }
+                }
+                .a__blue{
+                    color: $color-blue-4;
+                }
+            }
+            .menu__content {
+                padding: 15px 0 15px 20px;
+                width: 1200px;
+                background-color: white;
+                border: 1px solid $color-gray-7;
+                box-shadow: 0px 1px 2px 1px $color-gray-7;
+                .menu__chil__item {
+                    h6 {
+                        margin-top: 7px;
+                        font-size: $fs-2;
+                    }
+                }
+            }
+        }
+        // Menu 1
+        .menu1 {
+            &:hover .drop__menu1 {
+                visibility: visible;
+            }
+        }
+
+        // Menu 2
+        .menu2 {
+            &:hover .drop__menu2 {
+                visibility: visible;
+            }
+        }
+        .drop__menu2 {
+            left: 222px;
+            .menu__content {
+                width: 600px;
+            }
+        }
+        // Menu 3
+        .menu3 {
+            &:hover .drop__menu3 {
+                visibility: visible;
+            }
+        }
+        .drop__menu3 {
+            left: 405px;
+            .menu__content {
+                width: 680px;
+            }
+        }
+        // Menu 4
+        .menu4 {
+            &:hover .drop__menu4 {
+                visibility: visible;
+            }
+        }
+        .drop__menu4 {
+            left: 612px;
+            .menu__content {
+                width: 665px;
+            }
+        }
+        // Menu 5
+        .menu5 {
+            &:hover .drop__menu5 {
+                visibility: visible;
+            }
+        }
+        .drop__menu5 {
+            left: 404px;
+            .menu__content {
+                width: 535px;
+            }
+        }
+        // Menu 6
+        .menu6 {
+            &:hover .drop__menu6 {
+                visibility: visible;
+            }
+        }
+        .drop__menu6 {
+            left: 460px;
+            .menu__content {
+                width: 680px;
+            }
+        }
+        // Menu 7
+        .menu7 {
+            &:hover .drop__menu7 {
+                visibility: visible;
+            }
+        }
+        .drop__menu7 {
+            left: 695px;
+            .menu__content {
+                width: 567px;
+            }
+        }
+        // Menu 8
+        .drop__menu8 {
+            left: 828px;
+            .menu__content {
+                width: 540px;
+            }
         }
     }
 }
