@@ -1,0 +1,54 @@
+header {
+    #fiver__navbar {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+
+        .form-inline {
+            a {
+                display: inline-block;
+                background-image: url("../../img/1280px-Fiverr_logo.svg.png");
+                width: 90px;
+                height: 80px;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                text-decoration: none;
+                @include styleText($color-black, $fs-3, $fw-bold);
+                margin-right: $mg-2;
+            }
+        }
+        .fiver__menu {
+            display: flex;
+            justify-content: space-around;
+            gap: $pd-3;
+            a {
+                text-decoration: none;
+                padding: $pd-1 0;
+                @include styleText($color-gray-1, $fs-0, $fw-bold-1);
+                transition: all 0.5s;
+                i {
+                    margin-right: $mg-0;
+                }
+                &:hover {
+                    @include styleText($color-green-2, $fs-0, $fw-bold-1);
+                }
+            }
+            .fiver__pro {
+                @include styleText($color-blue, $fs-0, $fw-bold-1);
+                transition: all 0.5s;
+                &:hover {
+                    @include styleText($color-blue-light, $fs-0, $fw-bold-1);
+                }
+            }
+            @include responsive("medium") {
+                display: none;
+            }
+            @include responsive("large") {
+                a {
+                    display: none;
+                }
+            }
+        }
+    }
+}

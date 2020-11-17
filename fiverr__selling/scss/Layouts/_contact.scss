@@ -1,0 +1,65 @@
+.fiver__contact {
+    margin-top: $mg-3;
+    .container-fluid {
+        .div__contact {
+            width: 85%;
+            margin: 0 auto;
+            h1 {
+                font-weight: $fw-bold-0;
+                font-size: $fs-4;
+                padding: $mg-3 0;
+            }
+            #accordion {
+
+                .card{
+                    position: relative;
+                    margin-bottom: $mg-2;
+                    cursor: pointer;
+                    transition: all .5s;
+                    .card-header {
+                        a{
+                            text-decoration: none;
+                            color: $color-black;
+                            word-spacing:3px;
+                            font-weight: $fw-bold;
+                        }
+                        
+                    }
+                    &:hover{
+                        border: 1px solid $color-gray-1;
+                        border-left: none;
+                        
+                    }
+                    &:hover.card::before{
+                        opacity: 1;
+                    }
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        
+                        top: 0;
+                        left: 0;
+                        width: 5px;
+                        height: 100%;
+                        background-color: $color-green-0;
+                        opacity: 0;
+                    }
+                    
+                }
+            }
+            
+            @include responsive('medium'){
+                .hidden{
+                    display: none;
+                }
+            }
+        }
+        .div__getStarted {
+            padding: $pd-5 0;
+            h5 {
+                color: $color-gray-1;
+                margin-bottom: $mg-2;
+            }
+        }
+    }
+}

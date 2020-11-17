@@ -1,0 +1,735 @@
+@keyframes modal-video {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-video-inner {
+  from {
+    transform: translate(0, 100px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+.modal-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000000;
+  cursor: pointer;
+  opacity: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 0.3s;
+  animation-name: modal-video;
+  transition: opacity 0.3s ease-out;
+}
+
+.modal-video-close {
+  opacity: 0;
+}
+
+.modal-video-close .modal-video-movie-wrap {
+  transform: translate(0, 100px);
+}
+
+.modal-video-body {
+  max-width: 940px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: table;
+}
+
+.modal-video-inner {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-video-movie-wrap {
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  background-color: #333;
+  animation-timing-function: ease-out;
+  animation-duration: 0.3s;
+  animation-name: modal-video-inner;
+  transform: translate(0, 0);
+  transition: transform 0.3s ease-out;
+}
+
+.modal-video-movie-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-video-close-btn {
+  position: absolute;
+  z-index: 2;
+  top: -35px;
+  right: -35px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+}
+
+.modal-video-close-btn:before {
+  transform: rotate(45deg);
+}
+
+.modal-video-close-btn:after {
+  transform: rotate(-45deg);
+}
+
+.modal-video-close-btn:before, .modal-video-close-btn:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: -6px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+html, body {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.fiver-btnGreen-bold {
+  background-color: #1dbf73;
+  border: 1px solid #1dbf73;
+  border-radius: 3px;
+  padding: 5px 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.fiver-btnGreen-bold:hover {
+  background-color: #19a463;
+  border-color: #19a463;
+  color: #fff;
+}
+
+.fiver-btnGreen-light {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #1dbf73;
+  border: 1px solid #1dbf73;
+  border-radius: 3px;
+  padding: 12px 34px;
+}
+
+.fiver-btnGreen-light:hover {
+  background-color: #3fca89;
+  border-color: #3fca89;
+  color: #fff;
+}
+
+.fiver-btnWhite-colorGreen {
+  background-color: #fff;
+  border: 1px solid #1dbf73;
+  border-radius: 3px;
+  padding: 5px 12px;
+  color: #1dbf73;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.fiver-btnWhite-colorGreen:hover {
+  background-color: #19a463;
+  border-color: #19a463;
+  color: #fff;
+}
+
+header #fiver__navbar {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header #fiver__navbar .form-inline a {
+  display: inline-block;
+  background-image: url("../../img/1280px-Fiverr_logo.svg.png");
+  width: 90px;
+  height: 80px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+header #fiver__navbar .fiver__menu {
+  display: flex;
+  justify-content: space-around;
+  gap: 28px;
+}
+
+header #fiver__navbar .fiver__menu a {
+  text-decoration: none;
+  padding: 12px 0;
+  color: #62646a;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all .5s;
+}
+
+header #fiver__navbar .fiver__menu a i {
+  margin-right: 5px;
+}
+
+header #fiver__navbar .fiver__menu a:hover {
+  color: #19a463;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+header #fiver__navbar .fiver__menu .fiver__pro {
+  color: #1fd0b6;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all .5s;
+}
+
+header #fiver__navbar .fiver__menu .fiver__pro:hover {
+  color: #6ce9d7;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  header #fiver__navbar .fiver__menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header #fiver__navbar .fiver__menu a {
+    display: none;
+  }
+}
+
+footer {
+  border-top: 1px solid #d5d4d2;
+}
+
+footer .container-fluid {
+  padding: 12px 0;
+  width: 85%;
+  margin: 0 auto;
+}
+
+footer .container-fluid .div__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .container-fluid .div__footer .fiver__policy {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+footer .container-fluid .div__footer .fiver__policy span {
+  display: inline-block;
+  background-image: url("../../img/1280px-Fiverr_logo.svg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 90px;
+  height: auto;
+}
+
+footer .container-fluid .div__footer .fiver__policy .policy__text a {
+  color: #62646a;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+footer .container-fluid .div__footer .fiver__policy .policy__text a:hover {
+  border-bottom: 1px solid #7a7d85;
+}
+
+footer .container-fluid .div__footer .fiver__policy p {
+  color: #d5d4d2;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+footer .container-fluid .div__footer .fiver__social {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+}
+
+footer .container-fluid .div__footer .fiver__social a.hover__circle {
+  text-decoration: none;
+  color: #7a7d85;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer .container-fluid .div__footer .fiver__social a.hover__circle i {
+  padding: 12px;
+}
+
+footer .container-fluid .div__footer .fiver__social a.hover__circle:hover i {
+  background-color: #d5d4d2;
+  border-radius: 70%;
+}
+
+footer .container-fluid .div__footer .fiver__social a.hover__pill {
+  text-decoration: none;
+  color: #7a7d85;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer .container-fluid .div__footer .fiver__social a.hover__pill i {
+  padding: 12px;
+}
+
+footer .container-fluid .div__footer .fiver__social a.hover__pill:hover i {
+  background-color: #d5d4d2;
+  border-radius: 20px;
+}
+
+footer .container-fluid .div__footer .fiver__social .social__under {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  footer .container-fluid .div__footer {
+    display: inline-block;
+  }
+  footer .container-fluid .div__footer .fiver__policy {
+    display: inline-block;
+  }
+  footer .container-fluid .div__footer .fiver__policy span {
+    display: inline-block;
+    background-image: url("../../img/1280px-Fiverr_logo.svg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    transform: translateX(70%);
+    height: 20px;
+    text-align: center;
+  }
+  footer .container-fluid .div__footer .fiver__policy .policy__text {
+    display: inline-block;
+    text-align: center;
+    transform: translateX(50%);
+  }
+  footer .container-fluid .div__footer .fiver__policy p {
+    transform: translateX(50%);
+  }
+  footer .container-fluid .div__footer .fiver__social {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    transform: translateX(50%);
+  }
+  footer .container-fluid .div__footer .fiver__social .under {
+    display: none;
+  }
+}
+
+.fiver__comments {
+  margin-top: 50px;
+}
+
+.fiver__comments .container-fluid {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.fiver__comments .container-fluid h1 {
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.fiver__comments .container-fluid img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.fiver__comments .container-fluid .comments__text {
+  text-align: left;
+  transform: translateY(150%);
+}
+
+.fiver__comments .container-fluid .comments__text p {
+  color: #62646a;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.fiver__comments .container-fluid .comments__text span {
+  color: #62646a;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 992px) {
+  .fiver__comments .container-fluid .hidden {
+    display: none;
+  }
+  .fiver__comments .container-fluid .comments__text {
+    transform: translateY(50%);
+  }
+}
+
+.fiver__carousel {
+  display: block;
+  height: 580px;
+  overflow: hidden;
+  position: relative;
+}
+
+.fiver__carousel .carousel__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fiver__carousel .carousel__content h2 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.fiver__carousel .carousel__content p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.fiver__carousel .carousel__intro {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-50%);
+}
+
+.fiver__carousel .carousel__intro .carousel__item p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.fiver__carousel .carousel__intro .carousel__item h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .fiver__carousel .carousel__intro {
+    display: none;
+  }
+}
+
+.fiver__contact {
+  margin-top: 50px;
+}
+
+.fiver__contact .container-fluid .div__contact {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.fiver__contact .container-fluid .div__contact h1 {
+  font-weight: 600;
+  font-size: 40px;
+  padding: 50px 0;
+}
+
+.fiver__contact .container-fluid .div__contact #accordion .card {
+  position: relative;
+  margin-bottom: 25px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.fiver__contact .container-fluid .div__contact #accordion .card .card-header a {
+  text-decoration: none;
+  color: #000;
+  word-spacing: 3px;
+  font-weight: bold;
+}
+
+.fiver__contact .container-fluid .div__contact #accordion .card:hover {
+  border: 1px solid #62646a;
+  border-left: none;
+}
+
+.fiver__contact .container-fluid .div__contact #accordion .card:hover.card::before {
+  opacity: 1;
+}
+
+.fiver__contact .container-fluid .div__contact #accordion .card::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #1dbf73;
+  opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .fiver__contact .container-fluid .div__contact .hidden {
+    display: none;
+  }
+}
+
+.fiver__contact .container-fluid .div__getStarted {
+  padding: 50px 0;
+}
+
+.fiver__contact .container-fluid .div__getStarted h5 {
+  color: #62646a;
+  margin-bottom: 25px;
+}
+
+.fiver__learnMore {
+  margin-top: 50px;
+}
+
+.fiver__learnMore .container-fluid {
+  width: 85%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.fiver__learnMore .container-fluid .learnMore__content img {
+  display: block;
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.fiver__learnMore .container-fluid .learnMore__content h2 {
+  color: #62646a;
+  font-weight: 600;
+}
+
+.fiver__learnMore .container-fluid .learnMore__content p {
+  color: #7a7d85;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.fiver__learnMore .container-fluid .learnMore__video {
+  position: relative;
+}
+
+.fiver__learnMore .container-fluid .learnMore__video a i {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 22px 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.26);
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.fiver__learnMore .container-fluid .learnMore__video a:hover i {
+  background-color: rgba(0, 0, 0, 0.699);
+}
+
+@media screen and (max-width: 992px) {
+  .fiver__learnMore .container-fluid .hidden {
+    display: none;
+  }
+}
+
+.fiver__services {
+  margin-top: 50px;
+}
+
+.fiver__services .container-fluid {
+  padding: 34px 0;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.fiver__services .container-fluid h2 {
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.fiver__services .container-fluid .services__item {
+  text-align: center;
+}
+
+.fiver__services .container-fluid .services__item i {
+  color: #505763;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.fiver__services .container-fluid .services__item h5 {
+  color: #62646a;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.fiver__services .container-fluid .services__item p {
+  color: #62646a;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.fiver__team {
+  margin-top: 50px;
+}
+
+.fiver__team .container-fluid {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.fiver__team .container-fluid h1 {
+  color: #000;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .fiver__team .container-fluid .row .hidden {
+    display: none;
+  }
+  .fiver__team .container-fluid .row .col-6 {
+    margin-bottom: 25px;
+  }
+}
+
+.fiver__team .container-fluid .row a {
+  text-decoration: none;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.fiver__team .container-fluid .row a .team__item {
+  position: relative;
+  transition: all 1s;
+}
+
+.fiver__team .container-fluid .row a .team__item img {
+  display: block;
+  width: 100%;
+  max-width: 390px;
+  height: 280px;
+  transition: all .5s;
+}
+
+.fiver__team .container-fluid .row a .team__item .team__text {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+.fiver__team .container-fluid .row a .team__item .team__text p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.fiver__team .container-fluid .row a .team__item::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #1f1f1f;
+  opacity: 0;
+  transition: all .5s;
+}
+
+.fiver__team .container-fluid .row a .team__item:hover.team__item::after {
+  opacity: 0;
+}
+
+.fiver__team .container-fluid .row a .team__skill {
+  text-align: center;
+}
+
+.fiver__team .container-fluid .row a .team__skill h2 {
+  color: #62646a;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.fiver__team .container-fluid .row a .team__skill i {
+  color: Red;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+.fiver__team .container-fluid .row a:hover .team__item::after {
+  opacity: 0;
+}
+
+.fiver__team .container-fluid .row:hover a .team__item::after {
+  opacity: .8;
+}
+/*# sourceMappingURL=main.css.map */

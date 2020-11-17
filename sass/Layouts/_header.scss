@@ -1,5 +1,15 @@
 header {
+    position: fixed;
+    width: 100%;
     z-index: 10;
+    transition: all 0.3s;
+    hr {
+        visibility: hidden;
+    }
+    
+    
+    
+
     #fiver__navbar {
         display: flex;
         padding-bottom: 0;
@@ -7,7 +17,7 @@ header {
             .header__left {
                 display: inherit;
                 h5 {
-                    @include styleText($color-black-0, $fs-5 + 3, $fw-bold-3);
+                    @include styleText($color-white-0, $fs-5 + 3, $fw-bold-3);
                 }
                 p {
                     margin-left: $mg-1 + 10;
@@ -21,13 +31,23 @@ header {
                     color: #1fd0b6;
                     font-size: $fs-0;
                 }
+                // Scroll đổi màu chữ 
+                &.change_color1{
+                    h5{
+                        color: $color-black-0;
+                    }
+                }
             }
             .input-group {
+                visibility: hidden;
                 input {
                     &:focus {
                         outline: none;
                         box-shadow: none;
                     }
+                }
+                &.visibleInput{
+                    visibility: visible;
                 }
             }
         }
@@ -38,8 +58,7 @@ header {
             a {
                 text-decoration: none;
                 padding: 5px 0;
-                @include styleText($color-gray-1, $fs-1, $fw-bold-2);
-                color: #62646a;
+                @include styleText($color-white-0, $fs-1, $fw-bold-2);
                 transition: all 0.5s;
                 i {
                     margin-right: $mg-0;
@@ -50,17 +69,7 @@ header {
                     font-weight: 700;
                 }
             }
-            .fiver__pro {
-                color: #1fd0b6;
-                font-size: 16px;
-                font-weight: 700;
-                transition: all 0.5s;
-                &:hover {
-                    color: #505763;
-                    font-size: 16px;
-                    font-weight: 700;
-                }
-            }
+
             @include responsive("medium") {
                 display: none;
             }
@@ -69,36 +78,45 @@ header {
                     display: none;
                 }
             }
+            &.change_color2{
+                a{
+                    color: $color-gray-3;
+                }
+            }
         }
+    }
+    .bg__color {
+        background-color: white;
     }
 
     // menu layout2
     .menu_layer2 {
         text-align: center;
         position: relative;
+        margin-top: 6px;
         ul {
             display: flex;
             justify-content: space-evenly;
             margin: 5px 0;
             margin-bottom: 3px;
-            height: 27px;
+            height: 32px;
         }
         ul li {
             display: inline-block;
             a {
                 @include styleText($color-gray-3, $fs-2, $fw-bold-0);
-                &:hover{
+                &:hover {
                     text-decoration: none;
                 }
             }
-            &:hover{
+            &:hover {
                 border-bottom: 3px solid $color-blue-1;
             }
         }
         .drop__menu {
             position: absolute;
             visibility: hidden; //Ẩn hiện menu layer2
-            top: 27px;
+            top: 32px;
             z-index: 2;
             left: 1%;
             box-shadow: #62646a;
@@ -107,7 +125,7 @@ header {
                 a {
                     margin: 3px 0;
                     display: block;
-                    span{
+                    span {
                         border: 1px solid $color-pink-1;
                         font-size: $fs-0 - 2;
                         color: $color-pink-1;
@@ -116,12 +134,12 @@ header {
                         margin-left: $mg-1;
                         text-transform: uppercase;
                     }
-                    .beta{
+                    .beta {
                         border: 1px solid $color-blue-4;
                         color: $color-blue-4;
                     }
                 }
-                .a__blue{
+                .a__blue {
                     color: $color-blue-4;
                 }
             }
@@ -230,5 +248,25 @@ header {
                 width: 540px;
             }
         }
+    }
+
+    // Scroll hiện menu layer 2
+    .menu_layer2 {
+        position: absolute;
+        visibility: hidden;
+        &.headerClass {
+            position: relative;
+            visibility: visible;
+        }
+    }
+    // Scroll menu
+    &.headerHr {
+        hr {
+            visibility: visible;
+        }
+    }
+    &.headerClass1 {
+        background-color: white;
+       
     }
 }

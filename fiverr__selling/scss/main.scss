@@ -1,0 +1,30 @@
+//chỉ chứa đường dẫn tới các file con
+
+//Helper
+@import './Helper/variables';
+@import './Helper/mixin';
+
+//Vendor
+//chỉ import file scss của thư viện
+@import './Vendor/modal-video.scss';
+
+//Base
+@import './Base/reset';
+@import './Base/customize';
+
+// Components
+@import "./Components/button";
+
+//Layouts
+@import "./Layouts/header";
+@import "./Layouts/footer";
+@import "./Layouts/comments";
+@import "./Layouts/carousel";
+@import "./Layouts/contact";
+@import "./Layouts/learnMore";
+@import "./Layouts/services";
+@import "./Layouts/team";
+
+//Pages
+
+//Theme

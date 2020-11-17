@@ -1,0 +1,36 @@
+.fiver__comments{
+    margin-top: $mg-3;
+    .container-fluid{
+        width: 85%;
+        margin: 0 auto;
+        h1{
+            font-weight: $fw-bold;
+            margin-bottom: $mg-3    ;
+        }
+        img{
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+        .comments__text{
+            text-align: left;
+            transform: translateY(150%);
+            p{
+                @include styleText($color-gray-1, $fs-0, $fw-bold-0);
+                font-style: italic;
+            }
+            span{
+                @include styleText($color-gray-1, $fs-1, $fw-normal);
+            }
+        }
+        @include responsive('large'){
+            .hidden{
+                display: none;
+            }
+            .comments__text{
+                transform: translateY(50%);
+            }
+        }
+    }
+}

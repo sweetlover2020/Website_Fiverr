@@ -1,0 +1,92 @@
+.fiver__team{
+    margin-top: $mg-3;
+    .container-fluid{
+        width: 85%;
+        margin: 0 auto;
+        h1{
+            @include styleText($color-black, $fs-4, $fw-bold-0);
+            margin-bottom: $mg-2;
+        }
+        .row{
+            @include responsive('medium'){
+                .hidden{
+                    display: none;
+                }
+                .col-6{
+                    margin-bottom: $mg-2;
+                }
+            }
+            a{
+                text-decoration: none;
+                transition: all 1s;
+                overflow: hidden;
+                .team__item{
+                    position: relative;
+                    transition: all 1s;
+                    img{
+                        display: block;
+                        width: 100%;
+                        max-width: 390px;
+                        height: 280px;
+                        transition: all .5s;
+                    }
+                    .team__text{
+                        position: absolute;
+                        bottom: 5%;
+                        left: 5%;
+                        p{
+                            @include styleText($color-white-0, $fs-3, $fw-bold-0);
+                            margin: 0;
+                            
+                        }
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background-color: $color-black-hover;
+                        opacity: 0;
+                        transition: all .5s;
+                    }
+                    
+                    &:hover.team__item::after{
+                        opacity: 0;
+
+                    }
+                    // &:hover.team__item img{
+                    //     transform: scale(1.1);
+                    // }
+                }
+                
+                
+                .team__skill{
+                    text-align: center;
+                    
+                    h2{
+                        @include styleText($color-gray-1, $fs-4,$fw-normal);
+                        
+                    }
+                    i{
+                        @include styleText(Red, $fs-3, $fw-bold-0);
+                        margin-top: $mg-3;
+                    }
+                    
+                }
+                
+                   
+                
+                &:hover .team__item::after{
+                    opacity: 0;
+                }
+                
+            }
+            &:hover a .team__item::after{
+                opacity: .8;
+            }
+            
+        }
+    }
+}

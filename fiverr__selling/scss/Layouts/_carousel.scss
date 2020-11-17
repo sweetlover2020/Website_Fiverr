@@ -1,0 +1,42 @@
+.fiver__carousel{
+    display: block;
+    height: 580px;
+    overflow: hidden;
+    position: relative;
+    .carousel__content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        h2{
+            @include styleText($color-white-0, $fs-5, $fw-bold-0);
+
+        }
+        p{
+            @include styleText($color-white-0, $fs-3, $fw-normal);
+        }
+    }
+    .carousel__intro{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        
+        background-color: rgba(255,255,255,.3);
+        transform: translateY(-50%);
+        .carousel__item{
+            p{
+                @include styleText($color-white-0, $fs-2, $fw-normal);
+            }
+            h1{
+                @include styleText($color-white-0, $fs-4, $fw-normal);
+            }
+        }
+        @include responsive('medium'){
+            display: none;
+        }
+    }
+}

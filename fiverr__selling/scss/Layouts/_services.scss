@@ -1,0 +1,27 @@
+.fiver__services{
+    margin-top: $mg-3;
+    
+    .container-fluid{
+        padding: $pd-4 0;
+        width: 85%;
+        margin: 0 auto;
+        h2{
+            @include styleText($color-black, $fs-4, $fw-bold);
+            margin-bottom: $mg-2;
+        }
+        .services__item{
+            text-align: center;
+            
+            i{
+                @include styleText($color-black-light, $fs-4, $fw-bold-0);
+            }
+            h5{
+                @include styleText($color-gray-1, $fs-3,$fw-bold-0);
+                margin-top: $mg-1;
+            }
+            p{
+                @include styleText($color-gray-1, $fs-0, $fw-normal);
+            }
+        }
+    }
+}

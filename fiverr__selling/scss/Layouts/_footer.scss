@@ -1,0 +1,107 @@
+footer {
+    border-top: 1px solid $color-gray-2;
+    .container-fluid {
+        padding: $pd-1 0;
+        width: 85%;
+        margin: 0 auto;
+        .div__footer{
+            display: flex;
+            justify-content: space-between;
+            
+            .fiver__policy {
+                display: flex;
+                justify-content: space-around;
+                gap: $mg-1;
+                span {
+                    display: inline-block;
+                    background-image: url("../../img/1280px-Fiverr_logo.svg.png");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 90px;
+                    height: auto;
+                }
+                .policy__text {
+                    a {
+                        @include styleText($color-gray-1, $fs-0, $fw-normal);
+                        text-decoration: none;
+                        &:hover {
+                            border-bottom: 1px solid $color-gray-3;
+                        }
+                    }
+                }
+                p {
+                    @include styleText($color-gray-2, $fs-0, $fw-normal);
+                }
+            }
+            .fiver__social {
+                display: flex;
+                justify-content: space-around;
+                gap: $mg-2;
+                a.hover__circle {
+                    text-decoration: none;
+                    @include styleText($color-gray-3, $fs-2, $fw-bold);
+                    i {
+                        padding: $pd-1;
+                    }
+                    &:hover i {
+                        background-color: $color-gray-2;
+                        border-radius: 70%;
+                    }
+                }
+                a.hover__pill {
+                    text-decoration: none;
+                    @include styleText($color-gray-3, $fs-2, $fw-bold);
+    
+                    i {
+                        padding: $pd-1;
+                    }
+                    &:hover i {
+                        background-color: $color-gray-2;
+                        border-radius: 20px;
+                    }
+                }
+                .social__under{
+                    display: none;
+                    
+                }
+            }
+            @include responsive('medium'){
+                display: inline-block;
+                .fiver__policy{
+                    display: inline-block;
+                   
+                    span {
+                        display: inline-block;
+                        background-image: url("../../img/1280px-Fiverr_logo.svg.png");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        transform: translateX(70%);
+                        height: 20px;
+                        text-align: center;
+                    }
+                    .policy__text{
+                        display: inline-block;
+                        text-align: center;
+                        transform: translateX(50%);
+                    }
+                    p{
+                        transform: translateX(50%);
+                    }
+                    
+                }
+                .fiver__social{
+                    display: flex;
+                    justify-content: center;
+                    gap: 0;
+                    transform: translateX(50%);
+                    .under{
+                        display: none;
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+}
