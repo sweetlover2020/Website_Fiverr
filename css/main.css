@@ -117,93 +117,6 @@ hr {
   color: #fff;
 }
 
-.banner {
-  background-color: #F1FDF7;
-  padding: 70px 0;
-}
-
-.banner .banner__content {
-  padding-right: 9%;
-}
-
-.banner .banner__content ul li {
-  list-style: none;
-}
-
-.banner .banner__content ul li h6 {
-  margin-top: 25px;
-}
-
-.banner .banner__content ul li i {
-  color: #7a7d85;
-  margin-right: 10px;
-}
-
-.banner .banner__content ul li p {
-  color: #7a7d85;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.banner .banner__img {
-  margin-top: 25px;
-}
-
-.explore {
-  padding: 70px 0;
-}
-
-.explore h2 {
-  margin-bottom: 35px;
-}
-
-.explore .explore__row {
-  margin: 25px 0;
-}
-
-.explore .explore__row .explore__bg {
-  padding: 0 60px;
-}
-
-.explore .explore__row .explore__content {
-  text-align: center;
-}
-
-.explore .explore__row .explore__content a {
-  position: relative;
-}
-
-.explore .explore__row .explore__content a img {
-  height: 48px;
-}
-
-.explore .explore__row .explore__content a::after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  transform: translateX(50%);
-  border-bottom: 2px solid #c5c6c9;
-  top: 38px;
-  right: 50%;
-  transition: all 0.3s;
-}
-
-.explore .explore__row .explore__content p {
-  margin-top: 10px;
-  color: #29303b;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.explore .explore__row .explore__content:hover {
-  cursor: pointer;
-}
-
-.explore .explore__row .explore__content:hover a::after {
-  border-bottom: 2px solid #1dbf73;
-  width: 100px;
-}
-
 header {
   z-index: 10;
 }
@@ -451,6 +364,10 @@ header .menu_layer2 .drop__menu7 .menu__content {
   width: 567px;
 }
 
+header .menu_layer2 .menu8:hover .drop__menu8 {
+  visibility: visible;
+}
+
 header .menu_layer2 .drop__menu8 {
   left: 828px;
 }
@@ -465,6 +382,93 @@ header .menu_layer2 .drop__menu8 .menu__content {
 
 .trusted .container {
   width: 60%;
+}
+
+.banner {
+  background-color: #F1FDF7;
+  padding: 70px 0;
+}
+
+.banner .banner__content {
+  padding-right: 9%;
+}
+
+.banner .banner__content ul li {
+  list-style: none;
+}
+
+.banner .banner__content ul li h6 {
+  margin-top: 25px;
+}
+
+.banner .banner__content ul li i {
+  color: #7a7d85;
+  margin-right: 10px;
+}
+
+.banner .banner__content ul li p {
+  color: #7a7d85;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.banner .banner__img {
+  margin-top: 25px;
+}
+
+.explore {
+  padding: 70px 0;
+}
+
+.explore h2 {
+  margin-bottom: 35px;
+}
+
+.explore .explore__row {
+  margin: 25px 0;
+}
+
+.explore .explore__row .explore__bg {
+  padding: 0 60px;
+}
+
+.explore .explore__row .explore__content {
+  text-align: center;
+}
+
+.explore .explore__row .explore__content a {
+  position: relative;
+}
+
+.explore .explore__row .explore__content a img {
+  height: 48px;
+}
+
+.explore .explore__row .explore__content a::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  transform: translateX(50%);
+  border-bottom: 2px solid #c5c6c9;
+  top: 38px;
+  right: 50%;
+  transition: all 0.3s;
+}
+
+.explore .explore__row .explore__content p {
+  margin-top: 10px;
+  color: #29303b;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.explore .explore__row .explore__content:hover {
+  cursor: pointer;
+}
+
+.explore .explore__row .explore__content:hover a::after {
+  border-bottom: 2px solid #1dbf73;
+  width: 100px;
 }
 
 .business {

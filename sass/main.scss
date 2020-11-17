@@ -10,11 +10,12 @@
 // Components
 @import './Components/button';
 // Layouts
+@import './Layouts/header';
+@import './Layouts/trusted';
+@import './Layouts/services';
+
 @import './Layouts/banner';
 @import './Layouts/explore';
-@import './Layouts/header';
-@import'./Layouts/trusted';
-@import'./Layouts/services';
 @import './Layouts/business';
 @import './Layouts/comment';
 @import './Layouts/project';

@@ -219,6 +219,11 @@ header {
             }
         }
         // Menu 8
+        .menu8 {
+            &:hover .drop__menu8 {
+                visibility: visible;
+            }
+        }
         .drop__menu8 {
             left: 828px;
             .menu__content {
